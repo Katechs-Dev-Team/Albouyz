@@ -1,9 +1,11 @@
 <!-- بسم الله الرحمن الرحيم -->
 <!doctype html>
 <html class="no-js" lang="zxx">
-<title>Red Engineering || HTML Template</title>
+    <!-- test -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trade & Manufacturing || Alboayz </title>
 <!-- Place favicon.ico in the root directory -->
-<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon-red.png">
+<link rel="shortcut icon" type="image/x-icon" href="assets/my-images/logoo.png">
 <!-- CSS here -->
 <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
@@ -16,14 +18,135 @@
 <link rel="stylesheet" href="assets/css/vendor/spacing.css">
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/vendor/remixicon.css">
+    <style>.rs-theme-settings-open button{
+            display: none !important;
+        }
+        /* .odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-valueP{
+            font-size: 50px !important;
+        } */
+        </style>
+        <!-- res up -->
+         <style>/* ===== Ultra Small Screen Fix (max-width: 320px) ===== */
+@media (max-width: 320px) {
+  /* Add more breathing room */
+  body {
+    overflow-x: hidden !important;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+  }
 
-<body class="rs-smoother-yes rtl">
+  section,
+  .container,
+  .rs-section,
+  .rs-elements-brand-area,
+  .smart-locks-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* Make all headings smaller but readable */
+  h1 { font-size: 18px !important; line-height: 1.3; }
+  h2 { font-size: 16px !important; line-height: 1.4; }
+  h3 { font-size: 15px !important; }
+  p, span { font-size: 14px !important; line-height: 1.6; }
+
+  /* Fix buttons & center them */
+  .rs-btn,
+  button,
+  .lock-btn {
+    font-size: 13px !important;
+    padding: 8px 14px !important;
+    margin: 10px auto !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Prevent images from overflowing */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Fix cards & grids */
+  .lock-card,
+  .cert-card,
+  .cards-wrapper,
+  .rs-brand-wrapper,
+  .rs-text-slide-area {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    text-align: center;
+  }
+
+  /* Certificates & scroll sections */
+  .certificates-container {
+    display: flex !important;
+    overflow-x: auto !important;
+    gap: 16px !important;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+  }
+
+  .cert-card {
+    flex: 0 0 70% !important;
+    scroll-snap-align: center;
+  }
+
+  /* Scroll buttons smaller */
+  .scroll-btn {
+    font-size: 18px !important;
+    padding: 6px 10px !important;
+    background-color: #d13a21 !important;
+  }
+
+  /* Fix sections not sticking together */
+  section + section {
+    margin-top: 50px !important;
+  }
+
+  /* Avoid overlapping banners or sliders */
+  .rs-banner-wrapper {
+    text-align: center !important;
+    padding: 0 5% !important;
+  }
+
+  /* Reduce logo or hero text if any */
+  .rs-banner-stroke-text {
+    font-size: 26px !important;
+  }
+}
+</style>
+
+    <body class="rs-smoother-yes rtl">
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const allowedHref = "assets/profile.pdf"; // 
+    const links = document.querySelectorAll("a[href]");
+
+    links.forEach(link => {
+        const href = link.getAttribute("href");
+
+        if (href !== allowedHref) {
+        // Disable link click
+        link.addEventListener("click", e => e.preventDefault(), true);
+        // Optional: make sure keyboard can't open it
+        link.tabIndex = -1;
+        }
+    });
+    });
+    </script>
+
 
     <!-- preloader start -->
     <div id="pre-load">
         <div id="loader" class="loader">
             <div class="loader-container has-theme-red">
-                <div class="loader-icon"><img src="assets/images/favicon-red.png" alt=""></div>
+                <div class="loader-icon"><img src="assets/my-images/logoo.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -42,7 +165,7 @@
                 <div class="rs-header-inner">
                     <div class="rs-header-left">
                         <div class="rs-header-logo">
-                            <a href="index.html"><img src="assets/images/logo/logo-red.png" alt="logo"></a>
+                            <a href="index.html"><img src="assets/my-images/logo-w.png" alt="logo"></a>
                         </div>
                     </div>
                     <div class="rs-header-menu">
@@ -56,19 +179,19 @@
                                     <a href="#">Our Products</a>
                                     <ul class="submenu last-children">
                                         <li>
-                                            <a href="#">Bolts, Nuts & Washers</a>
+                                            <a href="#">Bolts, Nuts and Washers</a>
                                         </li>
                                         <li>
                                             <a href="#">Screws</a>
                                         </li>
                                         <li>
-                                            <a href="#">Fixings & Anchors</a>
+                                            <a href="#">Fixings and Anchors</a>
                                         </li>
                                         <li>
                                             <a href="#">Metal Framing System</a>
                                         </li>
                                         <li>
-                                            <a href="#">Wire & Mesh</a>
+                                            <a href="#">Wire and Mesh</a>
                                         </li>
                                         <li>
                                             <a href="#">Measuring Tools</a>
@@ -76,34 +199,147 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="#">Success Partners</a></li>
+                                                                <li class="menu-item-has-children">
+                                    <a href="#">Manufacturing</a>
+                                    <ul class="submenu last-children">
+                                        <li>
+                                            <a href="#">Steel Manufacturing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Chemical Manufacturing</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
 
-                                <li><a href="#">Certifications</a></li>
+                                <li><a href="#">Partners</a></li>
+
+                                <li><a href="#">Certificates</a></li>
                                 
-                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Contact</a></li>
                                 
                             </ul>
                         </nav>
                     </div>
                     <div class="rs-header-right">
-                        <!-- call start -->
-                        <div class="rs-about-btn">
-                            <a class="rs-btn has-theme-red has-icon" href="about.html">Profile
-                                <span class="icon-box">
-                                    <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                        <path
-                                            d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                        </path>
-                                    </svg>
-                                    <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                        <path
-                                            d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                        <!-- call end -->
+<!-- call start -->
+<div style="max-width: 100px !important; gap: -7px !important;" class="rs-about-btn">
+    <a 
+        style="max-width: 100px !important; gap: -7px !important;" 
+        class="rs-btn has-theme-red has-icon" 
+        href="#" 
+        onclick="openPdfModal('assets/profile.pdf'); return false;">
+        Profile
+        <span class="icon-box">
+            <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+            </svg>
+            <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+            </svg>
+        </span>
+    </a>
+</div>
+
+<!-- Popup Modal -->
+<div id="pdfModal" class="pdf-modal">
+  <div class="pdf-content">
+    <button class="close-btn" onclick="closePdfModal()" aria-label="Close PDF">
+      <!-- SVG أيقونة X -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <iframe id="pdfFrame" src="" frameborder="0"></iframe>
+  </div>
+</div>
+
+<!-- Styles -->
+<style>
+.pdf-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.pdf-content {
+  position: relative;
+  background: #fff;
+  width: 80%;
+  height: 85%;
+  border-radius: 14px;
+  overflow: hidden;
+  animation: slideUp 0.4s ease-out;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.pdf-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: #f8f8f8;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.close-btn:hover {
+  background: #ff4b4b;
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {transform: translateY(60px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+
+<!-- Script -->
+<script>
+function openPdfModal(url) {
+  document.getElementById('pdfFrame').src = url;
+  document.getElementById('pdfModal').style.display = 'flex';
+}
+
+function closePdfModal() {
+  document.getElementById('pdfModal').style.display = 'none';
+  document.getElementById('pdfFrame').src = '';
+}
+</script>
+<!-- call end -->
+
+
+
+
 
                         <!-- sidebar start -->
                         <div class="rs-header-hamburger has-theme-red">
@@ -130,7 +366,7 @@
                 <div class="offcanvas-content">
                     <div class="offcanvas-top d-flex justify-content-between align-items-center mb-25">
                         <div class="offcanvas-logo">
-                            <a href="index.html"><img src="assets/images/logo/logo-red-black.png" alt="logo"></a>
+                            <a href="index.html"><img src="assets/my-images/logo.png" alt="logo"></a>
                         </div>
                         <div class="offcanvas-close">
                             <button class="offcanvas-close-icon animation--flip">
@@ -143,43 +379,8 @@
                         </div>
                     </div>
                     <div class="offcanvas-about mb-30 d-none d-sm-block">
-                        <p> Industrie is a modern factory website. specifically designed for who need construction,
-                            firms, oil, architecture and any other small business.
+                        <p> Alboayz is a leading supplier of high-quality building materials and fixing systems, serving construction and engineering sectors across the region.
                         </p>
-                    </div>
-                    <div class="offcanvas-gallery d-none d-sm-block">
-                        <div class="offcanvas-gallery-thumb-wrapper">
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-01.png">
-                                    <img src="assets/images/gallery/gallery-thumb-01.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-02.png">
-                                    <img src="assets/images/gallery/gallery-thumb-02.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-03.png">
-                                    <img src="assets/images/gallery/gallery-thumb-03.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-04.png">
-                                    <img src="assets/images/gallery/gallery-thumb-04.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-05.png">
-                                    <img src="assets/images/gallery/gallery-thumb-05.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-01.png">
-                                    <img src="assets/images/gallery/gallery-thumb-01.png" alt="image">
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     <div class="mobile-menu">
                         <div class="rs-offcanvas-menu mb-25">
@@ -197,8 +398,7 @@
                                     </svg>
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="#"> 2096 New Market, New Road <br>
-                                    North Carolina, USA </a>
+                                    <a href="#"> Head Office: Riyadh <br> Branches: Jeddah - Al Qassim Dammam - Khamis Mushait</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center gap-15">
@@ -209,7 +409,7 @@
                                     </svg>
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="tel:+12346691234"> +123-4669-1234 </a>
+                                    <a href="tel:+12346691234"> +966 1129 560 10 <br> +966 1129 560 16 </a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center gap-15">
@@ -220,13 +420,13 @@
                                     </svg>
                                 </div>
                                 <div class="offcanvas-contact-text">
-                                    <a href="mailto:info@gmail.com">info@gmail.com</a>
+                                    <a href="mailto:alboayz@alboayz.com">alboayz@alboayz.com</a>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="offcanvas-social">
-                        <h4 class="offcanvas-title-meta">Subscribe & Follow</h4>
+                        <h4 class="offcanvas-title-meta">Subscribe and Follow</h4>
                         <ul>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -306,7 +506,6 @@
                         <div class="rs-banner-bg-thumb video-bg">
                         <video autoplay muted loop playsinline>
                             <source src="assets/vid.mp4" type="video/mp4">
-                            Your browser does not support HTML5 video.
                         </video>
                         <div class="video-overlay"></div>
                         </div>
@@ -318,9 +517,9 @@
                             <div class="rs-banner-wrapper">
                                 <span class="rs-banner-stroke-text">ALBOAYZ</span>
                                 <div class="rs-banner-content">
-                                <h1 class="rs-banner-title">Complete Building & Fixing Solutions You Can Trust</h1>
+                                <h1 class="rs-banner-title">Complete Building and Fixing Solutions You Can Trust</h1>
                                 <div class="rs-banner-descrip">
-                                    <p>From bolts and anchors to framing systems and tools — all in one place.</p>
+                                    <p>From bolts and anchors to framing systems and tools  all in one place.</p>
                                 </div>
                                 <div class="rs-banner-btn">
                                     <a class="rs-btn has-theme-red has-icon has-bg" href="contact.html">
@@ -352,7 +551,7 @@
                         <div class="rs-banner-bg-thumb video-bg">
                         <video autoplay muted loop playsinline>
                             <source src="assets/vid.mp4" type="video/mp4">
-                            Your browser does not support HTML5 video.
+                           
                         </video>
                         <div class="video-overlay"></div>
                         </div>
@@ -414,8 +613,8 @@
         <section class="smart-locks-section" style="background:#f9fafc; padding:80px 6%; font-family:'Poppins',sans-serif;">
         <div class="container" style="max-width:1200px; margin:auto;">
             <div class="section-title" style="text-align:center; margin-bottom:60px;">
-            <h2 style="font-size:36px; font-weight:700; color:#111;">Smart Electronic Locks</h2>
-            <p style="color:#666; font-size:16px;">Explore our premium selection of digital locks and access control systems built for modern security and comfort.</p>
+            <h2 style="font-size:36px; font-weight:700; color:#111;">Building and Fixing Solutions</h2>
+            <p style="color:#666; font-size:16px;">Explore our premium range of fasteners, anchors, and construction systems designed for strength, precision, and reliability.</p>
             </div>
 
             <style>
@@ -423,7 +622,7 @@
             .lock-card {
                 background: #fff;
                 border-radius: 18px;
-                background: #e0e0e0;
+                background: #e9e9e9;
                 box-shadow: 15px 15px 30px #e4e4e4, -15px -15px 30px #ffffff;
                 padding: 40px 30px;
                 min-height: 300px;
@@ -434,7 +633,7 @@
             }
             .lock-card-header {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
                 margin-bottom: 20px;
             }
@@ -452,23 +651,23 @@
             }
             .lock-btn {
                 display: inline-block;
-                background: red;
+                background: #d13a21;
                 color: #fff;
                 border: none;
                 border-radius: 5px;
-                padding: 10px 25px;
-                font-size: 14px;
+                padding: 15px 35px;
+                font-size: 1.6rem;
                 font-weight: 600;
                 cursor: pointer;
                 transition: 0.4s ease;
             }
             .lock-btn:hover {
-                background: blue;
+                background: #103055;
             }
             .lock-card:hover {
                 transform: translateY(-8px);
-                box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35),
-                            0 6px 10px rgba(0, 150, 255, 0.25);
+                box-shadow: 0 12px 25px rgba(20, 59, 104, 0.35),
+                            0 6px 10px rgba(20, 59, 104, 0.35);
             }
 
             /* Desktop Grid */
@@ -481,6 +680,8 @@
 
             /* Scroll buttons (for mobile) */
             .scroll-btn {
+                opacity: 0;
+                visibility: hidden;
                 display: none;
                 position: absolute;
                 top: 40%;
@@ -536,63 +737,63 @@
             </style>
 
             <div class="scroll-container" style="position: relative;">
-            <button class="scroll-btn left" onclick="scrollCards(-1)">&#10094;</button>
+            <button style="display: none !important;" class="scroll-btn left" onclick="scrollCards(-1)">&#10094;</button>
             <div class="cards-wrapper" id="cardsContainer">
                 <div class="lock-card">
                 <div class="lock-card-header">
-                    <h3>Door Lock System</h3>
-                    <img src="assets/icon.png" alt="Smart Electronic Locks" width="60">
+                    <h3>Bolts, Nuts and Washers</h3>
+                    <img src="assets/my-images/homepage/serv/1.png" alt="Smart Electronic Locks" width="60">
                 </div>
-                <p>Keyless entry with fingerprint and Bluetooth access. Ideal for homes and small offices.</p>
+                <p>Precision-engineered fasteners designed for maximum strength, durability, and perfect structural alignment.</p>
                 <button class="lock-btn">Learn More</button>
                 </div>
 
                 <div class="lock-card">
                 <div class="lock-card-header">
-                    <h3>Digital Safe Lock</h3>
-                    <img src="assets/icon.png" alt="Smart Electronic Locks" width="60">
+                    <h3>Screws</h3>
+                    <img src="assets/my-images/homepage/serv/2.png" alt="Smart Electronic Locks" width="60">
                 </div>
-                <p>Advanced protection for your personal or business valuables with cutting-edge security tech.</p>
+                <p>High-performance screws providing reliable fastening and smooth installation across all construction applications.</p>
                 <button class="lock-btn">Learn More</button>
                 </div>
 
                 <div class="lock-card">
                 <div class="lock-card-header">
-                    <h3>Smart Access Control</h3>
-                    <img src="assets/icon.png" alt="Smart Electronic Locks" width="60">
+                    <h3>Fixings and Anchors</h3>
+                    <img src="assets/my-images/homepage/serv/3.png" alt="Smart Electronic Locks" width="60">
                 </div>
-                <p>Centralized system for access management — perfect for modern residential and office buildings.</p>
+                <p>Heavy-duty anchors engineered for solid, secure, and long-lasting structural connections.</p>
                 <button class="lock-btn">Learn More</button>
                 </div>
 
                 <div class="lock-card">
                 <div class="lock-card-header">
-                    <h3>Remote Door Lock</h3>
-                    <img src="assets/icon.png" alt="Smart Electronic Locks" width="60">
+                    <h3>Metal Framing System</h3>
+                    <img src="assets/my-images/homepage/serv/4.png" alt="Smart Electronic Locks" width="60">
                 </div>
-                <p>Control your door from anywhere via mobile app — monitor entry logs and unlock remotely.</p>
+                <p>Galvanized steel framing components ensuring strength, stability, and precise drywall alignment.</p>
                 <button class="lock-btn">Learn More</button>
                 </div>
 
                 <div class="lock-card">
                 <div class="lock-card-header">
-                    <h3>Biometric Door Lock</h3>
-                    <img src="assets/icon.png" alt="Smart Electronic Locks" width="60">
+                    <h3>Wire and Mesh</h3>
+                    <img src="assets/my-images/homepage/serv/5.png" alt="Smart Electronic Locks" width="60">
                 </div>
-                <p>Seamless fingerprint and face recognition access, designed for both elegance and safety.</p>
+                <p>Reinforcement solutions that improve wall strength, surface bonding, and long-term protection.</p>
                 <button class="lock-btn">Learn More</button>
                 </div>
 
                 <div class="lock-card">
                 <div class="lock-card-header">
-                    <h3>Hotel Smart Lock</h3>
-                    <img src="assets/icon.png" alt="Smart Electronic Locks" width="60">
+                    <h3>Measuring Tools</h3>
+                    <img src="assets/my-images/homepage/serv/6.png" alt="Smart Electronic Locks" width="60">
                 </div>
-                <p>RFID-enabled door locks for hotels and resorts, allowing quick setup and easy management.</p>
+                <p>Professional measuring instruments built for precision, accuracy, and reliable performance.</p>
                 <button class="lock-btn">Learn More</button>
                 </div>
             </div>
-            <button class="scroll-btn right" onclick="scrollCards(1)">&#10095;</button>
+            <button style="display: none !important;" class="scroll-btn right" onclick="scrollCards(1)">&#10095;</button>
             </div>
         </div>
 
@@ -609,41 +810,79 @@
         </section>
         <!-- Services End -->
 
-        <!-- about area start -->
-        <section class="rs-about-area section-space rs-about-two">
+        <!-- about us start -->
+        <section class="rs-elements-tab-area section-space-bottom rs-about-ten">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row  g-5 justify-content-center section-title-space align-items-center">
+                    <div class="col-xxl-8 col-xl-9 col-lg-9">
+                        <div class="rs-section-title-wrapper text-center">
+                            <span class="rs-section-subtitle has-theme-orange">
+                       
+                     </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rs-about-shape-two">
+            </div>
+            <div class="container">
+                <div class="row g-5">
                     <div class="col-12">
                         <div class="rs-about-wrapper">
+                            <div class="rs-about-thumb-wrapper">
+                                <div class="rs-about-shape-one prallax-parent">
+                                    <img data-depth="1.3" src="assets/images/shape/dott-shape.png" alt="image">
+                                </div>
+                                <div class="rs-about-thumb">
+                                    <img src="assets/my-images/homepage/about-us.png" alt="image">
+                                </div>
+                                <div class="rs-about-counter-wrapper">
+                                    <div class="rs-counter-item">
+                                        <div class="rs-counter-content-wrapper">
+                                            <div class="rs-counter-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                                                    <circle opacity="0.1" cx="27.5" cy="27.5" r="27.5" fill="#1F1F1F"></circle>
+                                                    <path d="M43.543 41.25C43.543 41.25 45.8346 41.25 45.8346 38.9583C45.8346 36.6667 43.543 29.7917 34.3763 29.7917C25.2096 29.7917 22.918 36.6667 22.918 38.9583C22.918 41.25 25.2096 41.25 25.2096 41.25H43.543ZM25.2608 38.9583C25.2529 38.9574 25.2418 38.956 25.2283 38.9537C25.222 38.9527 25.2157 38.9515 25.2097 38.9504C25.213 38.3453 25.592 36.5908 26.9496 35.007C28.2194 33.5256 30.4408 32.0833 34.3763 32.0833C38.3118 32.0833 40.5332 33.5256 41.803 35.007C43.1606 36.5908 43.5396 38.3453 43.5429 38.9504C43.5369 38.9515 43.5306 38.9527 43.5243 38.9537C43.5108 38.956 43.4997 38.9574 43.4918 38.9583H25.2608Z" fill="white"></path>
+                                                    <path d="M34.3763 25.2083C36.9076 25.2083 38.9596 23.1563 38.9596 20.625C38.9596 18.0937 36.9076 16.0417 34.3763 16.0417C31.845 16.0417 29.793 18.0937 29.793 20.625C29.793 23.1563 31.845 25.2083 34.3763 25.2083ZM41.2513 20.625C41.2513 24.422 38.1733 27.5 34.3763 27.5C30.5793 27.5 27.5013 24.422 27.5013 20.625C27.5013 16.828 30.5793 13.75 34.3763 13.75C38.1733 13.75 41.2513 16.828 41.2513 20.625Z" fill="white"></path>
+                                                    <path d="M25.0628 30.4333C24.2199 30.1637 23.2836 29.9677 22.2449 29.8674C21.7308 29.8178 21.1916 29.7917 20.6263 29.7917C11.4596 29.7917 9.16797 36.6667 9.16797 38.9583C9.16797 40.4861 9.93186 41.25 11.4596 41.25H21.1221C20.7995 40.599 20.6263 39.8272 20.6263 38.9583C20.6263 36.6431 21.4908 34.2788 23.1238 32.3038C23.6817 31.629 24.3293 30.9997 25.0628 30.4333ZM20.4431 32.0844C19.0738 34.177 18.3346 36.5628 18.3346 38.9583H11.4596C11.4596 38.3608 11.836 36.5979 13.1996 35.007C14.4495 33.5488 16.6216 32.1284 20.4431 32.0844Z" fill="white"></path>
+                                                    <path d="M12.6055 21.7708C12.6055 17.9739 15.6835 14.8958 19.4805 14.8958C23.2774 14.8958 26.3555 17.9739 26.3555 21.7708C26.3555 25.5678 23.2774 28.6458 19.4805 28.6458C15.6835 28.6458 12.6055 25.5678 12.6055 21.7708ZM19.4805 17.1875C16.9492 17.1875 14.8971 19.2395 14.8971 21.7708C14.8971 24.3021 16.9492 26.3542 19.4805 26.3542C22.0118 26.3542 24.0638 24.3021 24.0638 21.7708C24.0638 19.2395 22.0118 17.1875 19.4805 17.1875Z" fill="white"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="rs-counter-number-item">
+                                                <span class="rs-counter-number odometer" data-count="30">00</span>
+                                                <span class="prefix">+</span>
+                                            </div>
+                                        </div>
+                                        <span class="rs-counter-title"><span class="large-text">Experience</div>
+                                </div>
+                            </div>
                             <div class="rs-about-content-wrapper">
                                 <div class="rs-section-title-wrapper">
                                     <span class="rs-section-subtitle has-theme-red justify-content-start">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15"
-                                 fill="none">
-                                 <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
-                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
-                                    fill="#EA5501"></path>
-                              </svg>
-                              About industrie
-                           </span>
-                                    <h2 class="rs-section-title rs-split-text-enable split-in-fade">We work for you <span
-                                 class="rs-theme-red">since 1989</span>. Industrial around the world</h2>
-                                    <p class="descrip">Welcome to Industrie, a leading industry innovator with a rich history of
-                                        excellence.</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15"
+                                        fill="none">
+                                        <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
+                                            fill="#EA5501"></path>
+                                    </svg>
+                                        ABOUT ALBOAYZ
+                                    </span>
+                                    <h2 class="rs-section-title rs-split-text-enable split-in-fade">We build with quality <span class="rs-theme-red">since 1993</span>. Trusted across the region.</h2>
+                                    <p class="descrip">Welcome to <strong>Alboayz Building Materials</strong>, a leading supplier of construction solutions with a strong legacy of quality and reliability.
+                                    </p>
                                 </div>
                                
                                 <div class="rs-aobut-tab-content-wrapper">
                                     <div class="tab-content rs-about-tab-anim" id="pills-tabContent">
                                         <div class="tab-pane fade show active" id="pills-item-one" role="tabpanel" aria-labelledby="pills-item-one-tab" tabindex="0">
                                             <div class="rs-about-tab-content">
-                                                <p>Welcome to Industrie, a leading industry innovator with a rich history of
-                                                    excellence
-                                                    with a passion make also for precision we have been empowering industries and
-                                                    driving progress for <span class="fw-6">over 30 years.</span></p>
+                                                <p>Alboayz Building Materials has been a reliable name in the construction industry.
+                                                    With a focus on quality and precision, we provide fasteners, anchors, and framing systems
+                                                    designed for strength, durability, and professional performance <span class="fw-6">for over 30 years.</span></p>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="pills-item-two" role="tabpanel" aria-labelledby="pills-item-two-tab" tabindex="0">
+                                        <!-- <div class="tab-pane fade" id="pills-item-two" role="tabpanel" aria-labelledby="pills-item-two-tab" tabindex="0">
                                             <div class="rs-about-tab-content">
                                                 <p>Welcome to Industrie, a leading industry innovator with a rich history of
                                                     excellence
@@ -658,12 +897,12 @@
                                                     with a passion make also for precision we have been empowering industries and
                                                     driving progress for <span class="fw-6">over 30 years.</span></p>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="rs-about-author-info">
                                     <div class="rs-about-btn">
-                                        <a class="rs-btn has-theme-red has-icon" href="about.html">Explore More
+                                        <a class="rs-btn has-theme-red has-icon" href="about.html">Learn More
                                             <span class="icon-box">
                                     <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                        <path
@@ -678,36 +917,210 @@
                                  </span>
                                         </a>
                                     </div>
-                                    <div class="rs-about-author">
-                                        <div class="rs-about-author-thumb">
-                                            <img src="assets/images/user/user-thumb-04.png" alt="image">
-                                        </div>
-                                        <div class="rs-about-author-sign-thumb">
-                                            <img src="assets/images/shape/sign-shape.png" alt="image">
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                            <div style="border-radius: 10px;" class="rs-about-thumb rs-image scroll_reveal reveal_left reveal-active">
-                                <img decoding="async" src="assets/images/about/about-thumb-02.png" alt="image">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- about area end -->
+        <!-- about us end -->
+
+   <!-- Certificates Section -->
+<section class="rs-elements-brand-area rs-brand-one primary-bg section-space rs-swiper"
+    style="background:#f9fafc; padding:80px 6%;">
+  <div class="container">
+    <!-- Title -->
+    <div class="row g-5 justify-content-center section-title-space align-items-center">
+      <div class="col-xxl-8 col-xl-9 col-lg-9 col-md-9 col-sm-9">
+        <div class="rs-section-title-wrapper text-center">
+          <span class="rs-section-subtitle has-theme-red">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
+              <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
+                fill="#EA5501"></path>
+            </svg>
+            Certificates
+          </span>
+          <h2 class="rs-section-title rs-split-text-enable split-in-fade">Official Accreditations</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificates Wrapper -->
+    <div class="certificates-wrapper">
+      <button style="display: none !important;" class="scroll-btn left" id="scrollLeftBtn">&#10094;</button>
+
+      <div class="certificates-container" id="certificatesContainer">
+        <div class="cert-card"><img src="assets/my-images/homepage/cert/1.png" alt="Certificate 1"></div>
+        <div class="cert-card"><img src="assets/my-images/homepage/cert/2.png" alt="Certificate 2"></div>
+        <div class="cert-card"><img src="assets/my-images/homepage/cert/3.png" alt="Certificate 3"></div>
+        <div class="cert-card"><img src="assets/my-images/homepage/cert/4.png" alt="Certificate 4"></div>
+      </div>
+
+      <button style="display: none !important;" class="scroll-btn right" id="scrollRightBtn">&#10095;</button>
+    </div>
+  </div>
+
+  <style>
+    .certificates-wrapper {
+      position: relative;
+      overflow: hidden;
+      margin-top: 40px;
+      margin-bottom: 80px;
+      padding-bottom: 20px;
+    }
+
+    .certificates-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      justify-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .cert-card img {
+      width: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .cert-card img:hover {
+      transform: scale(1.04);
+    }
+
+    /* Navigation buttons */
+    .scroll-btn {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      background-color: #d13a21;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 10px 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .scroll-btn:hover {
+      background-color: #b02e1b;
+      transform: translateY(-50%) scale(1.05);
+    }
+
+    .scroll-btn.left {
+      left: 10px;
+    }
+
+    .scroll-btn.right {
+      right: 10px;
+    }
+
+    /* 📱 Mobile Responsive Scroll */
+    @media (max-width: 768px) {
+      .certificates-container {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        padding: 10px 0;
+      }
+
+      .cert-card {
+        flex: 0 0 45%;
+        scroll-snap-align: start;
+      }
+
+      .cert-card img {
+        width: 100%;
+        max-width: 200px;
+      }
+
+      /* ✅ Show navigation only on mobile */
+      .scroll-btn {
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        display: flex !important;
+      }
+
+      .certificates-container::-webkit-scrollbar {
+        height: 8px;
+      }
+
+      .certificates-container::-webkit-scrollbar-thumb {
+        background: rgba(209, 58, 33, 0.5);
+        border-radius: 10px;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("certificatesContainer");
+      const btnLeft = document.getElementById("scrollLeftBtn");
+      const btnRight = document.getElementById("scrollRightBtn");
+
+      btnLeft.addEventListener("click", () => {
+        container.scrollBy({ left: -250, behavior: "smooth" });
+      });
+
+      btnRight.addEventListener("click", () => {
+        container.scrollBy({ left: 250, behavior: "smooth" });
+      });
+    });
+  </script>
+</section>
+<!-- End Certificates Section -->
+
+
+
+
+
+
 
         <!-- video area start -->
+         <div class="section-title text-center" style="margin-bottom: 60px; margin-t: 60px;">
+    <span class="sub-title" style="
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        color: #b71c1c;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    ">
+        Manufacturing
+    </span>
+
+    <h2 class="main-title" style="
+        font-size: 36px;
+        font-weight: 700;
+        color: #222;
+        margin: 0;
+    ">
+        Steel & Chemical 
+    </h2>
+</div>
         <div class="rs-video-area rs-video-one jarallax">
-            <div class="rs-video-bg-thumb jarallax-img" data-background="assets/images/bg/video-bg-01.png">
+            <div class="rs-video-bg-thumb jarallax-img" data-background="assets/my-images/8.png">
             </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8 col-md-10">
                         <div class="rs-video-content text-center">
                             <div class="rs-video-play-btn">
-                                <a href="https://www.youtube.com/watch?v=go7QYaQR494" class="rs-play-btn popup-video has-theme-red"><i class="fa-duotone fa-play"></i></a>
+                                <a href="https://www.youtube.com/watch?v=TW3PjAQGcqM" class="rs-play-btn popup-video has-theme-red"><i class="fa-duotone fa-play"></i></a>
                             </div>
                         </div>
                     </div>
@@ -716,61 +1129,142 @@
         </div>
         <!-- video area end -->
 
-        <!-- counter  -->
-        <section class="rs-elements-counter-area section-space rs-counter-one has-bg-orange">
-            <div class="container">
-                <div class="row  g-5 justify-content-center section-title-space align-items-center">
-                    
-                </div>
-                <div class="row g-5">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="rs-counter-item">
-                            <div class="rs-counter-inner">
-                                <div class="rs-counter-number-wrapper">
-                                    <span class="rs-counter-number odometer" data-count="50">00</span>
-                                    <span class="prefix">+</span>
-                                </div>
-                                <span class="rs-counter-title">Drilling Fields</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="rs-counter-item">
-                            <div class="rs-counter-inner">
-                                <div class="rs-counter-number-wrapper">
-                                    <span class="rs-counter-number odometer" data-count="49">00</span>
-                                    <span class="prefix">%</span>
-                                </div>
-                                <span class="rs-counter-title">Crane Equipment</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="rs-counter-item">
-                            <div class="rs-counter-inner">
-                                <div class="rs-counter-number-wrapper">
-                                    <span class="rs-counter-number odometer" data-count="20">00</span>
-                                    <span class="prefix">m</span>
-                                </div>
-                                <span class="rs-counter-title">Metal Factory</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="rs-counter-item">
-                            <div class="rs-counter-inner">
-                                <div class="rs-counter-number-wrapper">
-                                    <span class="rs-counter-number odometer" data-count="25">00</span>
-                                    <span class="prefix">k</span>
-                                </div>
-                                <span class="rs-counter-title">Drilling Fields</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- counter  -->
+<!-- Counter Section -->
+<section class="rs-elements-counter-area section-space rs-counter-one has-bg-orange">
+  <div class="container">
+    <div class="row g-5 justify-content-center section-title-space align-items-center"></div>
+
+    <div class="counter-row">
+      <!-- Counter Item 1 -->
+      <div class="counter-box">
+        <div class="rs-counter-inner text-center">
+          <div class="rs-counter-number-wrapper">
+            <span class="rs-counter-number odometer" data-count="30">00</span>
+            <span class="prefix">+</span>
+          </div>
+          <span class="rs-counter-title">Years</span>
+        </div>
+      </div>
+
+      <!-- Counter Item 2 -->
+      <div class="counter-box">
+        <div class="rs-counter-inner text-center">
+          <div class="rs-counter-number-wrapper">
+            <span class="rs-counter-number odometer" data-count="500">00</span>
+            <span class="prefix">+</span>
+          </div>
+          <span class="rs-counter-title">Projects</span>
+        </div>
+      </div>
+
+      <!-- Counter Item 3 -->
+      <div class="counter-box">
+        <div class="rs-counter-inner text-center">
+          <div class="rs-counter-number-wrapper">
+            <span class="rs-counter-number odometer" data-count="150">00</span>
+            <span class="prefix">+</span>
+          </div>
+          <span class="rs-counter-title">Products</span>
+        </div>
+      </div>
+
+      <!-- Counter Item 4 -->
+      <div class="counter-box">
+        <div class="rs-counter-inner text-center">
+          <div class="rs-counter-number-wrapper">
+            <span class="rs-counter-number odometer" data-count="99">00</span>
+            <span class="prefix">%</span>
+          </div>
+          <span class="rs-counter-title">Quality</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* ===== Counter Layout ===== */
+    .counter-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      justify-items: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .counter-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px 10px;
+      width: 100%;
+      max-width: 220px;
+      transition: transform 0.3s ease;
+    }
+
+    .counter-box:hover {
+      transform: scale(1.03);
+    }
+
+    .rs-counter-number-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .rs-counter-number {
+      font-size: 36px;
+      font-weight: bold;
+      color: #d13a21;
+    }
+
+    .prefix {
+      font-size: 24px;
+      color: #d13a21;
+    }
+
+    .rs-counter-title {
+      display: block;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* ===== Tablet & Small Screens (2x2 layout) ===== */
+    @media (max-width: 768px) {
+      .counter-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .rs-counter-number {
+        font-size: 30px !important;
+      }
+
+      .prefix {
+        font-size: 20px !important;
+      }
+
+      .rs-counter-title {
+        font-size: 16px !important;
+      }
+    }
+
+    /* ===== Very Small Screens (Full width) ===== */
+    @media (max-width: 400px) {
+      .counter-row {
+        grid-template-columns: 1fr;
+      }
+
+      .counter-box {
+        max-width: 100%;
+      }
+    }
+  </style>
+</section>
+<!-- End Counter Section -->
+
 
         <!-- brand Style 01 -->
         <section class="rs-elements-brand-area rs-brand-one primary-bg section-space rs-swiper">
@@ -778,16 +1272,16 @@
                 <div class="row  g-5 justify-content-center section-title-space align-items-center">
                     <div class="col-xxl-8 col-xl-9 col-lg-9">
                         <div class="rs-section-title-wrapper text-center">
-                            <span class="rs-section-subtitle has-theme-orange">
+                            <span class="rs-section-subtitle has-theme-red">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
                            <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
                            <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
                               fill="#EA5501"></path>
                         </svg>
-                        testimonial
+                        PARTENERS
                      </span>
-                            <h2 class="rs-section-title rs-split-text-enable split-in-fade">Brand Style 01</h2>
+                            <h2 class="rs-section-title rs-split-text-enable split-in-fade">SUCCESS PARTENERS</h2>
                         </div>
                     </div>
                 </div>
@@ -804,32 +1298,32 @@
                                     <div class="swiper-slide">
                                         <div class="rs-brand-item has-clip-path">
                                             <div class="rs-brand-thumb">
-                                                <img src="assets/images/brand/brand-thumb-02.png" alt="image">
+                                                <img src="assets/my-images/homepage/parteners/1.png" alt="image">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="rs-brand-item has-clip-path">
                                             <div class="rs-brand-thumb">
-                                                <img src="assets/images/brand/brand-thumb-03.png" alt="image">
+                                                <img src="assets/my-images/homepage/parteners/2.png" alt="image">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="rs-brand-item has-clip-path">
                                             <div class="rs-brand-thumb">
-                                                <img src="assets/images/brand/brand-thumb-04.png" alt="image">
+                                                <img src="assets/my-images/homepage/parteners/3.png" alt="image">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="rs-brand-item has-clip-path">
                                             <div class="rs-brand-thumb">
-                                                <img src="assets/images/brand/brand-thumb-05.png" alt="image">
+                                                <img src="assets/my-images/homepage/parteners/4.png" alt="image">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
+                                    <!-- <div class="swiper-slide">
                                         <div class="rs-brand-item has-clip-path">
                                             <div class="rs-brand-thumb">
                                                 <img src="assets/images/brand/brand-thumb-06.png" alt="image">
@@ -842,32 +1336,38 @@
                                                 <img src="assets/images/brand/brand-thumb-07.png" alt="image">
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <style>
+            .rs-brand-one .rs-brand-thumb img{
+                width: 120px !important;
+            }
+        </style>
         <!-- brand Style 01 -->
 
         <!-- why chose us -->
-        <section class="rs-elements-work-process-area section-space-bottom rs-work-step-two has-theme-orange-two">
+        <section class="rs-elements-work-process-area section-space-bottom rs-work-step-two has-theme-red-two" style="padding-top: 110px;">
             <div class="container">
                 <div class="row  g-5 justify-content-center section-title-space align-items-center">
                     <div class="col-xxl-8 col-xl-9 col-lg-9">
                         <div class="rs-section-title-wrapper text-center">
-                            <span class="rs-section-subtitle has-theme-orange">
+                            <span class="rs-section-subtitle has-theme-red">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
                            <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
                            <path fill-rule="evenodd" clip-rule="evenodd"
                               d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
                               fill="#EA5501"></path>
                         </svg>
-                        Work Process
+                        Our Features
                      </span>
-                            <h2 class="rs-section-title rs-split-text-enable split-in-fade">Work Process Style 04</h2>
+                            <h2 class="rs-section-title rs-split-text-enable split-in-fade">Why Choose Us</h2>
                         </div>
                     </div>
                 </div>
@@ -877,30 +1377,30 @@
                             <div class="rs-work-step-wrapper">
                                 <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                                     <span class="rs-work-step-number">01</span>
-                                    <h5 class="rs-work-step-title">Product Design and Planning</h5>
+                                    <h5 class="rs-work-step-title" style="width: 350px;">Certified Quality and Global Standards</h5>
                                     <div class="rs-work-step-descrip">
-                                        <p>The point of using Lorem Ipsum is that it has more-or-less normal.</p>
+                                        <p>Every product meets international safety and performance standards, ensuring reliability and durability in every application.</p>
                                     </div>
                                 </div>
                                 <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
                                     <span class="rs-work-step-number">02</span>
-                                    <h5 class="rs-work-step-title">Component Sourcing and Procurement</h5>
+                                    <h5 class="rs-work-step-title" style="width: 350px;" >Fast Delivery and Reliable Supply</h5>
                                     <div class="rs-work-step-descrip">
-                                        <p>Reader will be distracted by the readable content of a page when looking.</p>
+                                        <p>We maintain a strong logistics network to guarantee timely delivery and consistent product availability across all regions.</p>
                                     </div>
                                 </div>
                                 <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
                                     <span class="rs-work-step-number">03</span>
-                                    <h5 class="rs-work-step-title">Testing and Quality Control</h5>
+                                    <h5 class="rs-work-step-title" style="width: 350px;">Trusted Brands (SOLA – KEDAS – ORBOFIX)</h5>
                                     <div class="rs-work-step-descrip">
-                                        <p>Packages and web page editors now use as their default model.</p>
+                                        <p>Partnered with globally recognized brands known for precision, innovation, and superior quality in the construction industry.</p>
                                     </div>
                                 </div>
                                 <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".9s" data-wow-duration="1s">
                                     <span class="rs-work-step-number">04</span>
-                                    <h5 class="rs-work-step-title">Final Assembly and Integration</h5>
+                                    <h5 class="rs-work-step-title" style="width: 350px;">Tailored Solutions for All Project Sizes</h5>
                                     <div class="rs-work-step-descrip">
-                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below.</p>
+                                        <p>From small-scale developments to major infrastructure projects, we deliver custom material solutions designed to meet every project’s needs.</p>
                                     </div>
                                 </div>
                             </div>
@@ -909,346 +1409,72 @@
                 </div>
             </div>
         </section>
+        <style>
+            @media (max-width: 991px) {
+            .rs-work-step-item {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 6px !important;
+                padding: 10px 0 !important;
+            }
+            .rs-work-step-number {
+                order: 0 !important;
+                flex: 0 0 auto !important;
+                margin-bottom: 6px !important;
+            }
+            .rs-work-step-number::before{
+                display: none !important;
+            }
+            .rs-work-step-title {
+                order: 1 !important;
+                width: 100% !important;
+                margin: 0 0 6px 0 !important;
+            }
+            .rs-work-step-descrip {
+                order: 2 !important;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+            .rs-work-step-descrip p {
+                margin: 0 !important;
+            }
+            }
+            @media (max-width: 480px) {
+            .rs-work-step-item { gap: 4px !important; padding: 8px 0 !important; }
+            .rs-work-step-number { font-size: 0.95rem !important; }
+            .rs-work-step-title { font-size: 1rem !important; }
+            .rs-work-step-descrip p { font-size: 0.95rem !important; line-height: 1.4 !important; }
+            }
+        </style>
         <!-- why chose us -->
 
-        <!-- faq area start -->
-        <section class="rs-faq-area section-space rs-faq-one">
-            <div class="rs-faq-bg-thumb" data-background="assets/images/bg/faq-bg-01.png"></div>
+                <!-- subscribe area start -->
+        <div class="rs-subscribe-area rs-subscribe-one">
             <div class="container">
-                <div class="row g-5">
-                    <div class="col-xl-6 col-lg-6">
-                        <!-- faq area start -->
-                        <div class="rs-faq-wrapper">
-                            <div class="rs-section-title-wrapper section-title-space">
-                                <span class="rs-section-subtitle has-theme-red justify-content-start">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15"
-                              fill="none">
-                              <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                 d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
-                                 fill="#EA5501"></path>
-                           </svg>
-                           Faq's
-                        </span>
-                                <h2 class="rs-section-title rs-split-text-enable split-in-fade">General Questions</h2>
-                            </div>
-                            <div class="rs-faq-content rs-accordion-one has-theme-red">
-                                <div class="accordion-wrapper">
-                                    <div class="accordion" id="accordionExampleOne">
-                                        <div class="rs-accordion-item has-border-active">
-                                            <h4 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    01. Why is sand important for industry?
-                                                    <span class="accordion-btn"></span>
-                                                </button>
-                                            </h4>
-                                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExampleOne">
-                                                <div class="accordion-body"> Randomised words which don’t look even slightly
-                                                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure
-                                                    there isn’t anything.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="rs-accordion-item has-border-active">
-                                            <h6 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    02. Can I switch to a different plan?
-                                                    <span class="accordion-btn"></span>
-                                                </button>
-                                            </h6>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleOne">
-                                                <div class="accordion-body">Randomised words which don’t look even slightly
-                                                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure
-                                                    there isn’t anything.</div>
-                                            </div>
-                                        </div>
-                                        <div class="rs-accordion-item has-border-active">
-                                            <h6 class="accordion-header" id="headingThree">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    03. What should I wear for an industry treatment?
-                                                    <span class="accordion-btn"></span>
-                                                </button>
-                                            </h6>
-                                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExampleOne">
-                                                <div class="accordion-body">Randomised words which don’t look even slightly
-                                                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure
-                                                    there isn’t anything.</div>
-                                            </div>
-                                        </div>
-                                        <div class="rs-accordion-item has-border-active">
-                                            <h6 class="accordion-header" id="headingFour">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                    04. Can you give tips for the stock market?
-                                                    <span class="accordion-btn"></span>
-                                                </button>
-                                            </h6>
-                                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExampleOne">
-                                                <div class="accordion-body">Randomised words which don’t look even slightly
-                                                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure
-                                                    there isn’t anything.</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="rs-subscribe-wrapper">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="rs-subscribe-content">
+                                <div class="rs-subscribe-text">
+                                    <p>
+                                        Subscribe for the latest news. Stay updated on the latest trends.
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- faq area end -->
-                    </div>
-                    <!-- testimonial area start -->
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="rs-testimonial-wrapper rs-testimonial-two rs-swiper">
-                            <div class="rs-section-title-wrapper section-title-space">
-                                <span class="rs-section-subtitle has-theme-red justify-content-start">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15"
-                              fill="none">
-                              <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                 d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
-                                 fill="#EA5501"></path>
-                           </svg>
-                           Reviews
-                        </span>
-                                <h2 class="rs-section-title rs-split-text-enable split-in-fade">Customer Feedback</h2>
-                            </div>
-                            <div class="rs-testimonial-slider-wrapper">
-                                <div class="swiper" data-clone-slides="false" data-loop="true" data-speed="1500" data-autoplay="true" data-dots-dynamic="false" data-hover-pause="true" data-effect="false" data-delay="2500" data-item="1" data-item-xl="1" data-item-lg="1" data-item-md="1" data-item-sm="1" data-item-xs="1" data-item-mobile="1" data-margin="30" data-margin-xl="30">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="rs-testimonial-item">
-                                                <div class="rs-testimonial-avater-thumb">
-                                                    <div class="rs-testimonial-thumb">
-                                                        <img src="assets/images/user/user-thumb-01.png" alt="image">
-                                                    </div>
-                                                    <div class="rs-testimonial-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="29" viewBox="0 0 40 29" fill="none">
-                                                            <path d="M2.85714 29H11.4286L17.1429 17.4V0H0V17.4H8.57143L2.85714 29ZM25.7143 29H34.2857L40 17.4V0H22.8571V17.4H31.4286L25.7143 29Z" fill="white" fill-opacity="0.4"></path>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="rs-testimonial-content">
-                                                    <h5 class="rs-testimonial-title">Best Company</h5>
-                                                    <div class="rs-testimonial-description">
-                                                        <p>Podcasting operational change management inside of workflows to establish a
-                                                            framework Taking seamless key performance indicators.</p>
-                                                    </div>
-                                                    <div class="rs-tesimonial-avater-info">
-                                                        <h6 class="rs-testimonial-avater-title">Nayeem</h6>
-                                                        <span class="rs-testimonial-avater-designation">Manager</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="rs-testimonial-item">
-                                                <div class="rs-testimonial-avater-thumb">
-                                                    <div class="rs-testimonial-thumb">
-                                                        <img src="assets/images/user/user-thumb-02.png" alt="image">
-                                                    </div>
-                                                    <div class="rs-testimonial-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="29" viewBox="0 0 40 29" fill="none">
-                                                            <path d="M2.85714 29H11.4286L17.1429 17.4V0H0V17.4H8.57143L2.85714 29ZM25.7143 29H34.2857L40 17.4V0H22.8571V17.4H31.4286L25.7143 29Z" fill="white" fill-opacity="0.4"></path>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="rs-testimonial-content">
-                                                    <h5 class="rs-testimonial-title">Best Company</h5>
-                                                    <div class="rs-testimonial-description">
-                                                        <p>Podcasting operational change management inside of workflows to establish a
-                                                            framework Taking seamless key performance indicators.</p>
-                                                    </div>
-                                                    <div class="rs-tesimonial-avater-info">
-                                                        <h6 class="rs-testimonial-avater-title">Abdur Rashid</h6>
-                                                        <span class="rs-testimonial-avater-designation">Founder &amp; CEO</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="rs-testimonial-item">
-                                                <div class="rs-testimonial-avater-thumb">
-                                                    <div class="rs-testimonial-thumb">
-                                                        <img src="assets/images/user/user-thumb-03.png" alt="image">
-                                                    </div>
-                                                    <div class="rs-testimonial-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="29" viewBox="0 0 40 29" fill="none">
-                                                            <path d="M2.85714 29H11.4286L17.1429 17.4V0H0V17.4H8.57143L2.85714 29ZM25.7143 29H34.2857L40 17.4V0H22.8571V17.4H31.4286L25.7143 29Z" fill="white" fill-opacity="0.4"></path>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="rs-testimonial-content">
-                                                    <h5 class="rs-testimonial-title">Best Company</h5>
-                                                    <div class="rs-testimonial-description">
-                                                        <p>Podcasting operational change management inside of workflows to establish a
-                                                            framework Taking seamless key performance indicators.</p>
-                                                    </div>
-                                                    <div class="rs-tesimonial-avater-info">
-                                                        <h6 class="rs-testimonial-avater-title">Tom Hanks</h6>
-                                                        <span class="rs-testimonial-avater-designation">Customer</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- If we need navigation buttons -->
-                                    <div class=" rs-testimonial-navigation">
-                                        <button class="swiper-button-prev rs-swiper-btn has-bg-white hover-black has-small"><i
-                                    class="fa-regular fa-arrow-left"></i></button>
-                                        <button class="swiper-button-next rs-swiper-btn has-bg-white hover-black has-small"><i
-                                    class="fa-regular fa-arrow-right"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- testimonial area end -->
-                </div>
-            </div>
-        </section>
-        <!-- faq area end -->
-
-        <!-- blog area start -->
-        <section class="rs-blog-area section-space rs-blog-two rs-swiper">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-8 col-lg-9 col-md-10">
-                        <div class="rs-section-title-wrapper text-center section-title-space">
-                            <span class="rs-section-subtitle has-theme-red">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
-                           <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
-                           <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
-                              fill="#EA5501"></path>
-                        </svg>
-                        News &amp; Blog
-                     </span>
-                            <h2 class="rs-section-title rs-split-text-enable split-in-fade">Discover the future of factories
-                                and Industries</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="rs-blog-slider">
-                            <div class="swiper" data-clone-slides="false" data-loop="true" data-speed="1500" data-autoplay="true" data-dots-dynamic="false" data-hover-pause="true" data-effect="false" data-delay="2500" data-item="3" data-item-xl="3" data-item-lg="3" data-item-md="2" data-item-sm="1" data-item-xs="1" data-item-mobile="1" data-margin="30" data-margin-xl="30">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="rs-blog-item">
-                                            <div class="rs-blog-thumb">
-                                                <a href="blog-details.html"> <img src="assets/images/blog/blog-thumb-04.png" alt="image"></a>
-                                            </div>
-                                            <div class="rs-blog-content">
-                                                <div class="rs-blog-tag has-theme-red">
-                                                    <a href="blog-details.html">Company</a>
-                                                </div>
-                                                <h5 class="rs-blog-title underline has-black"> <a href="blog-details.html">Construction of a new high tech plant in Washington</a>
-                                                </h5>
-                                                <div class="rs-blog-meta">
-                                                    <div class="rs-blog-meta-item">
-                                                        <span>
-                                          By
-                                          <a class="rs-blog-meta-author" href="#"> Nayeem</a>
-                                       </span>
-                                                    </div>
-                                                    <div class="rs-blog-meta-item">
-                                                        <span>
-                                          Feb 8, 2024
-                                       </span>
-                                                    </div>
-                                                </div>
-                                                <div class="rs-blog-btn-wrapper">
-                                                    <span class="rs-blog-meta-text">22 min read</span>
-                                                    <a class="rs-square-btn has-icon has-light-grey" href="blog-details.html">
-                                                        <span class="icon-box">
-                                          <i class="ri-arrow-right-line icon-first"></i>
-                                          <i class="ri-arrow-right-line icon-second"></i>
-                                       </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="rs-blog-item">
-                                            <div class="rs-blog-thumb">
-                                                <a href="blog-details.html"> <img src="assets/images/blog/blog-thumb-05.png" alt="image"></a>
-                                            </div>
-                                            <div class="rs-blog-content">
-                                                <div class="rs-blog-tag has-theme-red">
-                                                    <a href="blog-details.html">industry</a>
-                                                </div>
-                                                <h5 class="rs-blog-title underline has-black"> <a href="blog-details.html">Building
-                                                        resilient supply for industries and factorie</a></h5>
-                                                <div class="rs-blog-meta">
-                                                    <div class="rs-blog-meta-item">
-                                                        <span>
-                                          By
-                                          <a class="rs-blog-meta-author" href="#"> Nayeem</a>
-                                       </span>
-                                                    </div>
-                                                    <div class="rs-blog-meta-item">
-                                                        <span>
-                                          Feb 8, 2024
-                                       </span>
-                                                    </div>
-                                                </div>
-                                                <div class="rs-blog-btn-wrapper">
-                                                    <span class="rs-blog-meta-text">22 min read</span>
-                                                    <a class="rs-square-btn has-icon has-light-grey" href="blog-details.html">
-                                                        <span class="icon-box">
-                                          <i class="ri-arrow-right-line icon-first"></i>
-                                          <i class="ri-arrow-right-line icon-second"></i>
-                                       </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="rs-blog-item">
-                                            <div class="rs-blog-thumb">
-                                                <a href="blog-details.html"> <img src="assets/images/blog/blog-thumb-06.png" alt="image"></a>
-                                            </div>
-                                            <div class="rs-blog-content">
-                                                <div class="rs-blog-tag has-theme-red">
-                                                    <a href="blog-details.html">Gas &amp; Oil</a>
-                                                </div>
-                                                <h5 class="rs-blog-title underline has-black"> <a href="blog-details.html">
-                                                        Interactive technologies in factories and plants</a></h5>
-                                                <div class="rs-blog-meta">
-                                                    <div class="rs-blog-meta-item">
-                                                        <span>
-                                          By
-                                          <a class="rs-blog-meta-author" href="#"> Nayeem</a>
-                                       </span>
-                                                    </div>
-                                                    <div class="rs-blog-meta-item">
-                                                        <span>
-                                          Feb 8, 2024
-                                       </span>
-                                                    </div>
-                                                </div>
-                                                <div class="rs-blog-btn-wrapper">
-                                                    <span class="rs-blog-meta-text">22 min read</span>
-                                                    <a class="rs-square-btn has-icon has-light-grey" href="blog-details.html">
-                                                        <span class="icon-box">
-                                          <i class="ri-arrow-right-line icon-first"></i>
-                                          <i class="ri-arrow-right-line icon-second"></i>
-                                       </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="rs-subscribe-input">
+                                    <input name="name" type="text" placeholder="Enter Your Email">
+                                    <button type="submit" class="rs-btn blue-bg">Send Message</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- blog area end -->
-
-
+        </div>
+        <!-- subscribe area end -->
 
     </main>
     <!-- Body main wrapper end -->
@@ -1256,7 +1482,7 @@
     <!-- footer area start -->
     <footer>
         <div class="rs-footer-area rs-footer-two">
-            <div class="rs-footer-bg-thumb" data-background="assets/images/bg/footer-bg-02.png"></div>
+            <div class="rs-footer-bg-thumb" data-background="assets/pattern.jpg"></div>
             <div class="rs-footer-top">
                 <div class="container">
                     <div class="row g-5">
@@ -1265,11 +1491,9 @@
                                 <h5 class="rs-footer-widget-title">About Company</h5>
                                 <div class="rs-footer-widget-content">
                                     <p class="rs-footer-widget-description">
-                                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                        Ipsums.
+                                        Alboayz is a trusted supplier of quality building materials and fixing systems for construction and engineering sectors.
                                     </p>
                                     <div class="rs-footer-widget-stroke-text">
-                                        <h3 class="rs-footer-stroke-text has-theme-red">Since 2007</h3>
                                     </div>
                                 </div>
                             </div>
@@ -1279,17 +1503,13 @@
                                 <h5 class="rs-footer-widget-title">Useful Links</h5>
                                 <div class="rs-footer-widget-content">
                                     <div class="rs-footer-widget-links has-theme-red">
-                                        <ul>
-                                            <li> <a href="#">About Us</a> </li>
-                                            <li><a href="#">Projects</a></li>
-                                            <li><a href="#">Careers</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Pricing</a></li>
-                                            <li><a href="#">Team</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                            <li><a href="#">Terms of use</a></li>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Our Projects</a></li>
+                                            <li><a href="#">Success&nbsp;Partners</a></li>
+                                            <li><a href="#">Certifications</a></li>
+                                            <li><a href="#">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1297,17 +1517,16 @@
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="rs-footer-widget footer-2-col-3">
-                                <h5 class="rs-footer-widget-title">Office Address</h5>
+                                <h5 class="rs-footer-widget-title">Address</h5>
                                 <div class="rs-footer-widget-content">
                                     <div class="rs-footer-widget-meta">
                                         <div class="rs-footer-widget-address">
-                                            <a target="_blank" href="https://www.google.com/maps">42 Mamnoun Street, Saba Carpet
-                                                and Antiques Store, UK</a>
+                                            <a target="_blank" href="https://www.google.com/maps">Head Office: Riyadh <br> Branches: Jeddah - Al Qassim Dammam - Khamis Mushait</a>
                                         </div>
                                         <h5 class="rs-footer-widget-title">Email Address</h5>
                                         <p> Interested in working with us?</p>
                                         <div class="rs-footer-widget-email">
-                                            <a href="mailto:industrie@gmail.com">industrie@gmail.com</a>
+                                            <a href="mailto:alboayz@alboayz.com">alboayz@alboayz.com</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1320,10 +1539,10 @@
                                     <div class="rs-footer-widget-contact-info">
                                         <div class="rs-footer-widget-number">
                                             <span>
-                                    <a href="tel:971551579261">+971 551 579 261</a>
+                                    <a href="tel:971551579261">+966 1129 560 10 </a>
                                  </span>
                                             <span>
-                                    <a href="tel:971551579261">+97 155 596 1659</a>
+                                    <a href="tel:971551579261">+966 1129 560 16</a>
                                  </span>
                                         </div>
                                     </div>
@@ -1347,7 +1566,7 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-12">
                             <div class="rs-footer-copyright has-theme-red text-center">
-                                <p class="underline">© <span id="year">2025</span> Industrie. Designed by <a href="https://rstheme.com">RSTheme</a></p>
+                                <p class="underline">© <span id="year">2025</span>ALBOAYZ. All rights reserved.</p>
                             </div>
                         </div>
                     </div>
@@ -1356,7 +1575,12 @@
         </div>
     </footer>
     <!-- footer area end -->
-
+     <style>
+        button,
+        .btn, a {
+        border-radius: 10px !important;
+        }
+     </style>
     <!-- back to top -->
     <!-- Backtotop start -->
     <div class="backtotop-wrap cursor-pointer has-theme-red">
