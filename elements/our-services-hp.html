@@ -1,0 +1,200 @@
+        <!-- Services Start -->
+        <section class="smart-locks-section" style="background:#f9fafc; padding:80px 6%; font-family:'Poppins',sans-serif;">
+        <div class="container" style="max-width:1200px; margin:auto;">
+            <div class="section-title" style="text-align:center; margin-bottom:60px;">
+            <h2 style="font-size:36px; font-weight:700; color:#111;">Building and Fixing Solutions</h2>
+            <p style="color:#666; font-size:16px;">Explore our premium range of fasteners, anchors, and construction systems designed for strength, precision, and reliability.</p>
+            </div>
+
+            <style>
+            /* Card Styling */
+            .lock-card {
+                background: #fff;
+                border-radius: 18px;
+                background: #e9e9e9;
+                box-shadow: 15px 15px 30px #e4e4e4, -15px -15px 30px #ffffff;
+                padding: 40px 30px;
+                min-height: 300px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+                transition: all 0.9s ease;
+                position: relative;
+                overflow: hidden;
+            }
+            .lock-card-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .lock-card h3 {
+                font-size: 20px;
+                font-weight: 600;
+                color: #111;
+                margin: 0;
+            }
+            .lock-card p {
+                color: #555;
+                font-size: 15px;
+                line-height: 1.6;
+                margin-bottom: 25px;
+            }
+            .lock-btn {
+                display: inline-block;
+                background: #d13a21;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 15px 35px;
+                font-size: 1.6rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.4s ease;
+            }
+            .lock-btn:hover {
+                background: #103055;
+            }
+            .lock-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 25px rgba(20, 59, 104, 0.35),
+                            0 6px 10px rgba(20, 59, 104, 0.35);
+            }
+
+            /* Desktop Grid */
+            .cards-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+                position: relative;
+            }
+
+            /* Scroll buttons (for mobile) */
+            .scroll-btn {
+                opacity: 0;
+                visibility: hidden;
+                display: none;
+                position: absolute;
+                top: 40%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.3);
+                color: white;
+                border: none;
+                border-radius: 10%;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                z-index: 10;
+                transition: background 0.3s;
+            }
+            .scroll-btn:hover {
+                background: rgba(0, 0, 0, 0.6);
+            }
+            .scroll-btn.left {
+                left: -10px;
+            }
+            .scroll-btn.right {
+                right: -10px;
+            }
+
+            /* Scrollable layout for small screens */
+            @media (max-width: 768px) {
+                .cards-wrapper {
+                display: flex;
+                overflow-x: auto;
+                gap: 20px;
+                scroll-snap-type: x mandatory;
+                padding-bottom: 10px;
+                }
+
+                .lock-card {
+                flex: 0 0 80%;
+                scroll-snap-align: start;
+                min-width: 280px;
+                }
+
+                .cards-wrapper::-webkit-scrollbar {
+                height: 8px;
+                }
+                .cards-wrapper::-webkit-scrollbar-thumb {
+                background: rgba(0, 150, 255, 0.4);
+                border-radius: 10px;
+                }
+
+                .scroll-btn {
+                display: block;
+                }
+            }
+            </style>
+
+            <div class="scroll-container" style="position: relative;">
+            <button style="display: none !important;" class="scroll-btn left" onclick="scrollCards(-1)">&#10094;</button>
+            <div class="cards-wrapper" id="cardsContainer">
+                <div class="lock-card">
+                <div class="lock-card-header">
+                    <h3>Bolts, Nuts and Washers</h3>
+                    <img src="assets/my-images/homepage/serv/1.png" alt="Smart Electronic Locks" width="60">
+                </div>
+                <p>Precision-engineered fasteners designed for maximum strength, durability, and perfect structural alignment.</p>
+                <button class="lock-btn">Learn More</button>
+                </div>
+
+                <div class="lock-card">
+                <div class="lock-card-header">
+                    <h3>Screws</h3>
+                    <img src="assets/my-images/homepage/serv/2.png" alt="Smart Electronic Locks" width="60">
+                </div>
+                <p>High-performance screws providing reliable fastening and smooth installation across all construction applications.</p>
+                <button class="lock-btn">Learn More</button>
+                </div>
+
+                <div class="lock-card">
+                <div class="lock-card-header">
+                    <h3>Fixings and Anchors</h3>
+                    <img src="assets/my-images/homepage/serv/3.png" alt="Smart Electronic Locks" width="60">
+                </div>
+                <p>Heavy-duty anchors engineered for solid, secure, and long-lasting structural connections.</p>
+                <button class="lock-btn">Learn More</button>
+                </div>
+
+                <div class="lock-card">
+                <div class="lock-card-header">
+                    <h3>Metal Framing System</h3>
+                    <img src="assets/my-images/homepage/serv/4.png" alt="Smart Electronic Locks" width="60">
+                </div>
+                <p>Galvanized steel framing components ensuring strength, stability, and precise drywall alignment.</p>
+                <button class="lock-btn">Learn More</button>
+                </div>
+
+                <div class="lock-card">
+                <div class="lock-card-header">
+                    <h3>Wire and Mesh</h3>
+                    <img src="assets/my-images/homepage/serv/5.png" alt="Smart Electronic Locks" width="60">
+                </div>
+                <p>Reinforcement solutions that improve wall strength, surface bonding, and long-term protection.</p>
+                <button class="lock-btn">Learn More</button>
+                </div>
+
+                <div class="lock-card">
+                <div class="lock-card-header">
+                    <h3>Measuring Tools</h3>
+                    <img src="assets/my-images/homepage/serv/6.png" alt="Smart Electronic Locks" width="60">
+                </div>
+                <p>Professional measuring instruments built for precision, accuracy, and reliable performance.</p>
+                <button class="lock-btn">Learn More</button>
+                </div>
+            </div>
+            <button style="display: none !important;" class="scroll-btn right" onclick="scrollCards(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <script>
+            function scrollCards(direction) {
+            const container = document.getElementById('cardsContainer');
+            const scrollAmount = container.clientWidth * 0.8;
+            container.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+            }
+        </script>
+        </section>
+        <!-- Services End -->
