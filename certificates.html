@@ -59,35 +59,35 @@
                         
                         <nav id="mobile-menu" class="main-menu">
                             <ul class="multipage-menu">
-                                <li><a href="#">Home</a></li>
+                                <li><a href="index.html">Home</a></li>
 
-                                <li><a href="#">About us</a></li>
+                                <li><a href="about-us.html">About us</a></li>
 
                                 <li class="menu-item-has-children">
                                     <a href="#">Our Products</a>
                                     <ul class="submenu last-children">
                                         <li>
-                                            <a href="#">Bolts, Nuts and Washers</a>
+                                            <a href="Bolts-Nuts-Washers.html">Bolts, Nuts and Washers</a>
                                         </li>
                                         <li>
-                                            <a href="#">Screws</a>
+                                            <a href="Screws.html">Screws</a>
                                         </li>
                                         <li>
-                                            <a href="#">Fixings and Anchors</a>
+                                            <a href="Fixings-Anchors.html">Fixings and Anchors</a>
                                         </li>
                                         <li>
-                                            <a href="#">Metal Framing System</a>
+                                            <a href="Metal-Framing-System.html">Metal Framing System</a>
                                         </li>
                                         <li>
-                                            <a href="#">Wire and Mesh</a>
+                                            <a href="Wire-Mesh.html">Wire and Mesh</a>
                                         </li>
                                         <li>
-                                            <a href="#">Measuring Tools</a>
+                                            <a href="Measuring-Tools.html">Measuring Tools</a>
                                         </li>
                                     </ul>
                                 </li>
 
-                                                                <li class="menu-item-has-children">
+                                <li class="menu-item-has-children">
                                     <a href="#">Manufacturing</a>
                                     <ul class="submenu last-children">
                                         <li>
@@ -100,11 +100,11 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="#">Partners</a></li>
+                                <li><a href="parteners.html">Partners</a></li>
 
-                                <li><a href="#">Certificates</a></li>
+                                <li><a href="certificates.html">Certificates</a></li>
                                 
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                                 
                             </ul>
                         </nav>
@@ -143,87 +143,87 @@
                     </div>
                     </div>
 
-                    <!-- Styles -->
-                    <style>
-                    .pdf-modal {
-                    display: none;
-                    position: fixed;
-                    z-index: 9999;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(0,0,0,0.7);
-                    justify-content: center;
-                    align-items: center;
-                    animation: fadeIn 0.3s ease-in-out;
-                    }
+<!-- Styles -->
+<style>
+.pdf-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
 
-                    .pdf-content {
-                    position: relative;
-                    background: #fff;
-                    width: 80%;
-                    height: 85%;
-                    border-radius: 14px;
-                    overflow: hidden;
-                    animation: slideUp 0.4s ease-out;
-                    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-                    }
+.pdf-content {
+  position: relative;
+  background: #fff;
+  width: 80%;
+  height: 85%;
+  border-radius: 14px;
+  overflow: hidden;
+  animation: slideUp 0.4s ease-out;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
 
-                    .pdf-content iframe {
-                    width: 100%;
-                    height: 100%;
-                    border: none;
-                    }
+.pdf-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
-                    .close-btn {
-                    position: absolute;
-                    top: 12px;
-                    right: 14px;
-                    background: #f8f8f8;
-                    border: none;
-                    border-radius: 50%;
-                    width: 38px;
-                    height: 38px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    cursor: pointer;
-                    transition: all 0.25s;
-                    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-                    }
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: #f8f8f8;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
 
-                    .close-btn:hover {
-                    background: #ff4b4b;
-                    color: #fff;
-                    transform: rotate(90deg);
-                    }
+.close-btn:hover {
+  background: #ff4b4b;
+  color: #fff;
+  transform: rotate(90deg);
+}
 
-                    /* Animation */
-                    @keyframes slideUp {
-                    from {transform: translateY(60px); opacity: 0;}
-                    to {transform: translateY(0); opacity: 1;}
-                    }
+/* Animation */
+@keyframes slideUp {
+  from {transform: translateY(60px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
 
-                    @keyframes fadeIn {
-                    from {opacity: 0;}
-                    to {opacity: 1;}
-                    }
-                    </style>
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
 
-                    <!-- Script -->
-                    <script>
-                    function openPdfModal(url) {
-                    document.getElementById('pdfFrame').src = url;
-                    document.getElementById('pdfModal').style.display = 'flex';
-                    }
+<!-- Script -->
+<script>
+function openPdfModal(url) {
+  document.getElementById('pdfFrame').src = url;
+  document.getElementById('pdfModal').style.display = 'flex';
+}
 
-                    function closePdfModal() {
-                    document.getElementById('pdfModal').style.display = 'none';
-                    document.getElementById('pdfFrame').src = '';
-                    }
-                    </script>
-                    <!-- call end -->
+function closePdfModal() {
+  document.getElementById('pdfModal').style.display = 'none';
+  document.getElementById('pdfFrame').src = '';
+}
+</script>
+<!-- call end -->
 
 
 
@@ -505,7 +505,35 @@
     </section>
     <!-- End Certificates Section -->
 
-    </main>
+<!-- subscribe area start -->
+        <div class="rs-subscribe-area rs-subscribe-one">
+            <div class="container">
+                <div class="rs-subscribe-wrapper">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="rs-subscribe-content">
+                                <div class="rs-subscribe-text">
+                                    <p>
+                                        Subscribe for the latest news. Stay updated on the latest trends.
+                                    </p>
+                                </div>
+                                <div class="rs-subscribe-input">
+                                    <input name="name" type="text" placeholder="Enter Your Email">
+                                    <button type="submit" class="rs-btn blue-bg">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- subscribe area end -->
+
+
+</main>
     <!-- Body main wrapper end -->
 
     <!-- footer area start -->
