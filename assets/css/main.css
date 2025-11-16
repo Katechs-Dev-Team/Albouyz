@@ -13354,6 +13354,7 @@ body.rtl .rs-theme-dir-slide {
   }
 }
 .rs-about-thirteen .rs-about-thumb img {
+  border-radius: 10px;
   width: 100%;
   transition: unset;
 }
