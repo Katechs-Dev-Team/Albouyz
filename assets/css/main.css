@@ -2928,7 +2928,7 @@ textarea:focus {
 /*----------------------------------------*/
 .rs-breadcrumb-one {
   padding-top: 170px;
-  padding-bottom: 170px;
+  padding-bottom: 109px;
 }
 @media only screen and (max-width: 1199px) {
   .rs-breadcrumb-one {
