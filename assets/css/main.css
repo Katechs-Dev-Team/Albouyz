@@ -58,6 +58,7 @@
 		2.23 smooth-scroll
 		2.24 social
 		2.25 index
+    2.26 maq-style
 
 	-----------------
     03. layout
@@ -25698,3 +25699,19 @@ a.ui-button:active {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* maq-style start*/
+
+/* product section top */
+.p-st-cont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 60vh;
+  background-color: red;
+}
+.p-st-title{
+  
+}
