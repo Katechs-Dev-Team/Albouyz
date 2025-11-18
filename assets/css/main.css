@@ -25705,13 +25705,15 @@ a.ui-button:active {
 /* product section top */
 .p-st-cont{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: start;
   width: 100%;
   height: 60vh;
   background-color: red;
 }
 .p-st-title{
-  
+  width: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
