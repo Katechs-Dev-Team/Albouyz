@@ -25717,12 +25717,51 @@ a.ui-button:active {
   justify-content: center;
 }
 
-.p-st-overview{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.p-st-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+.p-st-ov-txt.descrip {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.p-st-ov-btn {
+    flex-shrink: 0;
+}
+
+.p-st-ov-btn a {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+    .p-st-overview {
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+    }
+
+    .p-st-ov-txt.descrip {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .p-st-ov-txt.descrip {
+        font-size: 16px;
+    }
+}
+
 
 .p-st-main{
   width: 100%;
@@ -25781,3 +25820,4 @@ a.ui-button:active {
     flex: 0 0 85%;
   }
 }
+/* prodduct section BLK */
