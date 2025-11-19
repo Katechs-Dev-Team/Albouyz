@@ -25838,11 +25838,17 @@ a.ui-button:active {
 .p-blk-rs{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 45%;
 }
-.p-blk-rs{
+.p-blk-ls{
   display: flex;
   flex-direction: column;
+  width: 45%;
+  gap: 9px;
+}
+.p-blk-ls-t{
+  display: flex;
   width: 45%;
   gap: 9px;
 }
