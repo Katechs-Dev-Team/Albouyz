@@ -25744,7 +25744,7 @@ a.ui-button:active {
 }
 .p-st-main-col-img{
   height: 100%;
-  width: 90%;
+  width: 100%;
   border-radius: 5%;
   object-fit: cover;
   object-position: center;
