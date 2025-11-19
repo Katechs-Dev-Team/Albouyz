@@ -25702,6 +25702,8 @@ a.ui-button:active {
 
 /* maq-style start*/
 
+/* MAQ style */
+/* prodduct section top */
 .p-st-cont{
   display: flex;
   flex-direction: column;
@@ -25725,6 +25727,51 @@ a.ui-button:active {
   justify-content: space-between;
 }
 
+
+.p-st-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.p-st-ov-txt.descrip {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.p-st-ov-btn {
+    flex-shrink: 0;
+}
+
+.p-st-ov-btn a {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+    .p-st-overview {
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+    }
+
+    .p-st-ov-txt.descrip {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .p-st-ov-txt.descrip {
+        font-size: 16px;
+    }
+}
 .p-st-main{
   width: 100%;
   display: grid;
@@ -25751,6 +25798,23 @@ a.ui-button:active {
 .p-st-main-col-txt{
   padding: 10px;
   text-align: center;
+  object-fit: cover;
+}
+.p-st-main-col-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.p-st-main-col-txt{
+  margin-top: 10px;
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+  text-align: start;
+  justify-content: start;
 }
 
 /* -------------------------- */
@@ -25775,3 +25839,65 @@ a.ui-button:active {
     flex: 0 0 85%;
   }
 }
+
+/* prodduct section BLK */
+.p-blk-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10x;
+  margin-bottom: 60px;
+}
+.p-blk-title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.p-blk-rst{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.p-blk-rs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+.p-blk-ls{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 45%;
+  gap: 25px;
+}
+.p-blk-ls-t{
+  display: flex;
+  height: 45%;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  object-position: center;
+}
+.p-blk-ls-t-img{
+  display: flex;
+  height: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: center;
+}
+.p-blk-ls-b h2 p{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 5px;
+  text-align: start;
+  align-items: start;
+  justify-content: start;
+}
+
