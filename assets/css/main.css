@@ -25984,4 +25984,52 @@ a.ui-button:active {
   }
 }
 
+/* product section third */
+.p-s-thrd-cont{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.p-s-thrd-l{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 340px;
+  width: 40%;
+}
+.p-s-thrd-mid{
+  display: flex;
+  height: 100%;
+  object-fit: cover;
+  width: 25%;
+  object-position: center;
+}
+.p-s-thrd-mid img{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5%;
+}
+.p-s-thrd-r{
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 25%;
+  padding-bottom: 90px;
+}
+.p-s-thrd-r img{
+  display: flex;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5%;
+}
+
+
 
