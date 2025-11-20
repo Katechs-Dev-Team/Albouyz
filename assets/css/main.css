@@ -25984,12 +25984,14 @@ a.ui-button:active {
   }
 }
 
-/* product section third */
+/* Desktop layout - original */
 .p-s-thrd-cont{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 20px;
 }
+
 .p-s-thrd-l{
   display: flex;
   flex-direction: column;
@@ -25997,39 +25999,66 @@ a.ui-button:active {
   min-width: 340px;
   width: 40%;
 }
+
 .p-s-thrd-mid{
   display: flex;
-  height: 100%;
-  object-fit: cover;
   width: 25%;
-  object-position: center;
 }
+
 .p-s-thrd-mid img{
-  display: flex;
-  align-items: center;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
   border-radius: 5%;
 }
+
 .p-s-thrd-r{
   display: flex;
-  gap: 15px;
-  justify-content: space-around;
   flex-direction: column;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  gap: 15px;
   width: 25%;
   padding-bottom: 90px;
 }
+
 .p-s-thrd-r img{
-  display: flex;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
   border-radius: 5%;
 }
+
+/* Responsive layout for small screens (≤768px) */
+@media (max-width: 768px) {
+  .p-s-thrd-cont {
+    flex-direction: column;  /* stack sections vertically */
+    gap: 20px;
+  }
+
+  .p-s-thrd-l {
+    width: 100%;           /* left full width */
+  }
+
+  .p-s-thrd-r {
+    display: none;         /* hide right section */
+  }
+
+  .p-s-thrd-mid {
+    width: 100%;           /* mid full width under left */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .p-s-thrd-mid img {
+    width: 100%;
+    max-width: 250px;      /* image size for mobile */
+    height: auto;
+    border-radius: 5%;
+  }
+}
+
+
+
 
 
 
