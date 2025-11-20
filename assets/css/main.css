@@ -25894,10 +25894,40 @@ a.ui-button:active {
 .p-blk-ls-b h2 p{
   display: flex;
   width: 100%;
-  flex-direction: column;
+  flex-direction: column; 
   gap: 5px;
   text-align: start;
   align-items: start;
   justify-content: start;
 }
+.p-blk-rs-row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.p-blk-rs-row-l{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  object-position: center;
+}
+.p-blk-rs-row-l-img{
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  object-fit: cover;
+  object-position: center;
+}
+.p-blk-rs-row-r{
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
 
