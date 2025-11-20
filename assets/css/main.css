@@ -3176,7 +3176,7 @@ input[type=checkbox] ~ label:hover {
   width: 40px;
   height: 40px;
   font-size: 16px;
-  background-color: #d13b21;
+  background-color: #dd3d21;
   transition: 0.3s;
 }
 .rs-theme-social a:hover {
@@ -25887,6 +25887,10 @@ a.ui-button:active {
   width: 100%;
   border-radius: 5%;
   object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+.p-blk-ls-t-img:hover{  
+  transform: translateX(20px); /* Move 20px to the right */
 }
 
 /* Fix: wrong selector originally (h2 p does not exist) */
@@ -25902,7 +25906,7 @@ a.ui-button:active {
   display: flex;
   flex-direction: column;
   width: 45%;
-  gap: 25px;
+  gap: 50px;
 }
 
 .p-blk-rs-row{
@@ -25915,6 +25919,10 @@ a.ui-button:active {
 /* Right images */
 .p-blk-rs-row-l{
   width: 30%;
+  transition: transform 0.7s ease; /* Smooth animation */ 
+}
+.p-blk-rs-row-l:hover{
+  transform: scale(1.06); /* Slightly bigger on hover */
 }
 
 .p-blk-rs-row-l img{
@@ -25971,7 +25979,7 @@ a.ui-button:active {
   }
 
   .p-blk-rs-row-l img{
-    max-height: 190px;           /* Shrink images on mobile */
+    max-height: 180px;           /* Shrink images on mobile */
     object-fit: cover;
   }
 }
