@@ -26052,6 +26052,7 @@ a.ui-button:active {
     max-width: 250px;      /* image size for mobile */
     height: auto;
     border-radius: 5%;
+    
   }
 }
 /* products section tos */
@@ -26074,7 +26075,12 @@ a.ui-button:active {
   object-fit: cover;
   object-position: center;
   border-radius: 5%;
+  transition: .6s ease;
 }
+.p-s-tos-l img:hover{
+  scale: 1.03;
+}
+
 
 .p-s-tos-r{
   width: 45%;
@@ -26130,6 +26136,37 @@ a.ui-button:active {
 /* ============================
    All sections RTL 
    ============================ */
+.my-rtl-sections {
+    direction: rtl; /* Switches text and layout direction */
+    text-align: right; /* Align text to right by default */
+}
+/* Only affects arrows inside your RTL sections */
+.my-rtl-sections svg {
+    transform: scaleX(-1); /* flips horizontally */
+}
+
+/* Optional: only flip specific icons */
+.my-rtl-sections .icon-first,
+.my-rtl-sections .icon-second,
+.my-rtl-sections .rs-section-subtitle svg {
+    transform: scaleX(-1);
+}
+.my-rtl-sections .justify-content-start {
+    justify-content: flex-end; /* aligns content to the right in RTL */
+}
+.my-rtl-sections.rtl-enabled {
+    direction: rtl;
+    text-align: right;
+}
+
+.my-rtl-sections.rtl-enabled .justify-content-start {
+    justify-content: flex-end;
+}
+
+.my-rtl-sections.rtl-enabled svg {
+    transform: scaleX(-1);
+}
+
 
 
 
