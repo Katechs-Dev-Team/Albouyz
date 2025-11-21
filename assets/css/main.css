@@ -26054,8 +26054,82 @@ a.ui-button:active {
     border-radius: 5%;
   }
 }
+/* products section tos */
+.p-s-tos-cont{
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+}
 
+.p-s-tos-l{
+  width: 45%;
+  object-fit: cover;
+  object-position: center;
+}
 
+.p-s-tos-l img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5%;
+}
+
+.p-s-tos-r{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ============================
+   📱 RESPONSIVE
+   ============================ */
+
+/* Tablet screens */
+@media (max-width: 992px) {
+  .p-s-tos-cont{
+    gap: 20px;
+  }
+  .p-s-tos-l,
+  .p-s-tos-r{
+    width: 48%;
+  }
+}
+
+/* Mobile large (600–768px) */
+@media (max-width: 768px) {
+  .p-s-tos-cont{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .p-s-tos-l,
+  .p-s-tos-r{
+    width: 90%;
+  }
+  .p-s-tos-l img {
+    border-radius: 10px;
+  }
+  .p-s-tos-r{
+    align-items: center;
+  }
+}
+
+/* Mobile small (<600px) */
+@media (max-width: 600px) {
+  .p-s-tos-l,
+  .p-s-tos-r{
+    width: 100%;
+  }
+  .p-s-tos-cont{
+    gap: 15px;
+  }
+}
+/* ============================
+   All sections RTL 
+   ============================ */
 
 
 
