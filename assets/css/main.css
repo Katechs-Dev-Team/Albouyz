@@ -5610,7 +5610,6 @@ body.rtl .rs-theme-dir-slide {
 .rs-header-one .rs-header-logo-wrapper {
   width: 295px;
   height: 98px;
-  background-color: var(--rs-bg-primary);
   display: flex;
   align-items: center;
   justify-content: center;
