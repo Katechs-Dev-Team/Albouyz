@@ -25947,7 +25947,7 @@ a.ui-button:active {
   transition: transform 0.7s ease; /* Smooth animation */ 
 }
 .p-blk-rs-row-l:hover{
-  transform: scale(1.06); /* Slightly bigger on hover */
+  transform: scale(1.04); /* Slightly bigger on hover */
 }
 
 .p-blk-rs-row-l img{
@@ -26030,6 +26030,10 @@ a.ui-button:active {
 .p-s-thrd-mid{
   display: flex;
   width: 25%;
+  transition: transform 0.7s ease; /* Smooth animation */ 
+}
+.p-s-thrd-mid:hover{
+  transform: scale(1.04); /* Slightly bigger on hover */
 }
 
 .p-s-thrd-mid img{
@@ -26045,6 +26049,10 @@ a.ui-button:active {
   gap: 15px;
   width: 25%;
   padding-bottom: 90px;
+  transition: transform 0.7s ease; /* Smooth animation */ 
+}
+.p-s-thrd-r:hover{
+  transform: scale(1.04); /* Slightly bigger on hover */
 }
 
 .p-s-thrd-r img{
