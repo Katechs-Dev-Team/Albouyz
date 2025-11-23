@@ -933,7 +933,9 @@ Sidebar Toggle
             });
     });
 
-})(jQuery);
+})
+    //nav btns ps-t
+    (jQuery);
 
     const mainContainer = document.querySelector('.p-st-main');
     const leftBtn = document.querySelector('.left-btn');
@@ -946,5 +948,15 @@ Sidebar Toggle
     rightBtn.addEventListener('click', () => {
         mainContainer.scrollBy({ left: 300, behavior: 'smooth' });
     });
+    // profile btn js
+    function openPdfModal(url) {
+        document.getElementById("pdfFrame").src = url;
+        document.getElementById("pdfModal").style.display = "flex";
+    }
+
+    function closePdfModal() {
+        document.getElementById("pdfModal").style.display = "none";
+        document.getElementById("pdfFrame").src = "";
+    }
 
 
