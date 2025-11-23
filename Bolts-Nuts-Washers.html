@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/vendor/spacing.css">
     <link rel="stylesheet" href="assets/css/vendor/remixicon.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <style>h2{color: #0e2a4b !important;}</style>
 </head>
 
 <body class="rs-smoother-yes rtl">
@@ -55,178 +56,68 @@
                         </div>
                         </div>
                     </div>
-                    <div class="rs-header-menu">
+
+                        <div class="rs-header-menu">
+                            <nav id="mobile-menu" class="main-menu">
+                                <ul class="multipage-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about-us.html">About us</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Our Products</a>
+                                        <ul class="submenu last-children">
+                                            <li>
+                                                <a href="Bolts-Nuts-Washers.html">Bolts, Nuts and Washers</a>
+                                            </li>
+                                            <li>
+                                                <a href="Screws.html">Screws</a>
+                                            </li>
+                                            <li>
+                                                <a href="Fixings-Anchors.html">Fixings and Anchors</a>
+                                            </li>
+                                            <li>
+                                                <a href="Metal-Framing-System.html">Metal Framing System</a>
+                                            </li>
+                                            <li>
+                                                <a href="Wire-Mesh.html">Wire and Mesh</a>
+                                            </li>
+                                            <li>
+                                                <a href="Measuring-Tools.html">Measuring Tools</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Manufacturing</a>
+                                        <ul class="submenu last-children">
+                                            <li>
+                                                <a href="#">Steel Manufacturing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Chemical Manufacturing</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="parteners.html">Partners</a></li>
+                                    <li><a href="certificates.html">Certificates</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                         
-                        <nav id="mobile-menu" class="main-menu">
-                            <ul class="multipage-menu">
-                                <li><a href="#">Home</a></li>
-
-                                <li><a href="#">About us</a></li>
-
-                                <li class="menu-item-has-children">
-                                    <a href="#">Our Products</a>
-                                    <ul class="submenu last-children">
-                                        <li>
-                                            <a href="#">Bolts, Nuts and Washers</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Screws</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Fixings and Anchors</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Metal Framing System</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Wire and Mesh</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Measuring Tools</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                                                <li class="menu-item-has-children">
-                                    <a href="#">Manufacturing</a>
-                                    <ul class="submenu last-children">
-                                        <li>
-                                            <a href="#">Steel Manufacturing</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Chemical Manufacturing</a>
-                                        </li>
-                                        
-                                    </ul>
-                                </li>
-
-                                <li><a href="#">Partners</a></li>
-
-                                <li><a href="#">Certificates</a></li>
-                                
-                                <li><a href="#">Contact</a></li>
-                                
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="rs-header-right">
-                    <!-- call start -->
-                    <div style="max-width: 100px !important; gap: -7px !important;" class="rs-about-btn">
-                        <a 
-                            style="max-width: 100px !important; gap: -7px !important;" 
-                            class="rs-btn has-theme-red has-icon" 
-                            href="#" 
-                            onclick="openPdfModal('assets/profile.pdf'); return false;">
-                            Profile
-                            <span class="icon-box">
-                                <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                    <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
-                                </svg>
-                                <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                    <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-
-                    <!-- Popup Modal -->
-                    <div id="pdfModal" class="pdf-modal">
-                    <div class="pdf-content">
-                        <button class="close-btn" onclick="closePdfModal()" aria-label="Close PDF">
-                        <!-- SVG أيقونة X -->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                        </button>
-                        <iframe id="pdfFrame" src="" frameborder="0"></iframe>
-                    </div>
-                    </div>
-
-                    <!-- Styles -->
-                    <style>
-                    .pdf-modal {
-                    display: none;
-                    position: fixed;
-                    z-index: 9999;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(0,0,0,0.7);
-                    justify-content: center;
-                    align-items: center;
-                    animation: fadeIn 0.3s ease-in-out;
-                    }
-
-                    .pdf-content {
-                    position: relative;
-                    background: #fff;
-                    width: 80%;
-                    height: 85%;
-                    border-radius: 14px;
-                    overflow: hidden;
-                    animation: slideUp 0.4s ease-out;
-                    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-                    }
-
-                    .pdf-content iframe {
-                    width: 100%;
-                    height: 100%;
-                    border: none;
-                    }
-
-                    .close-btn {
-                    position: absolute;
-                    top: 12px;
-                    right: 14px;
-                    background: #f8f8f8;
-                    border: none;
-                    border-radius: 50%;
-                    width: 38px;
-                    height: 38px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    cursor: pointer;
-                    transition: all 0.25s;
-                    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-                    }
-
-                    .close-btn:hover {
-                    background: #ff4b4b;
-                    color: #fff;
-                    transform: rotate(90deg);
-                    }
-
-                    /* Animation */
-                    @keyframes slideUp {
-                    from {transform: translateY(60px); opacity: 0;}
-                    to {transform: translateY(0); opacity: 1;}
-                    }
-
-                    @keyframes fadeIn {
-                    from {opacity: 0;}
-                    to {opacity: 1;}
-                    }
-                    </style>
-
-                    <!-- Script -->
-                    <script>
-                    function openPdfModal(url) {
-                    document.getElementById('pdfFrame').src = url;
-                    document.getElementById('pdfModal').style.display = 'flex';
-                    }
-
-                    function closePdfModal() {
-                    document.getElementById('pdfModal').style.display = 'none';
-                    document.getElementById('pdfFrame').src = '';
-                    }
-                    </script>
-                    <!-- call end -->
-
-
-
+                        <div class="rs-header-right">
+                        <!-- Header Profile Button -->
+                        <div class="rs-header-btn d-none d-lg-block">
+                            <a class="rs-btn has-theme-red has-icon" href="assets/profile.pdf" target="_blank">
+                                Profile
+                                <span class="icon-box">
+                                    <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                    </svg>
+                                    <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
 
 
                         <!-- sidebar start -->
@@ -275,6 +166,21 @@
                         <div class="rs-offcanvas-menu mb-25">
                             <nav></nav>
                         </div>
+                        <!-- Sidebar Profile Button -->
+<div class="offcanvas-profile-btn d-block d-lg-none mb-20">
+    <a class="rs-btn has-theme-red has-icon" href="assets/profile.pdf" target="_blank">
+        Profile
+        <span class="icon-box">
+            <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+            </svg>
+            <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
+            </svg>
+        </span>
+    </a>
+</div>
+
                     </div>
                     <div class="offcanvas-contact mb-30">
                         <h4 class="offcanvas-title-meta">Contact Info</h4>
@@ -336,19 +242,19 @@
 
         <!-- breadcrumb area start -->
         <section class="rs-breadcrumb-area rs-breadcrumb-one p-relative">
-            <div class="rs-breadcrumb-bg" data-background="assets/images/bg/breadcrumb-bg-01.png"></div>
+            <div class="rs-breadcrumb-bg" data-background="assets/my-images/products/bnr-products.png"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-6 col-xl-8 col-lg-8">
                         <div class="rs-breadcrumb-content-wrapper">
                             <div class="rs-breadcrumb-title-wrapper">
-                                <h1 class="rs-breadcrumb-title">About Us Two</h1>
+                                <h1 class="rs-breadcrumb-title">Bolts, Nuts & Washers</h1>
                             </div>
                             <div class="rs-breadcrumb-menu">
                                 <nav>
                                     <ul>
-                                        <li><span><a href="index.html">Industrie</a></span></li>
-                                        <li><span>About Us Two</span></li>
+                                        <li><span><a href="index.html">Home</a></span></li>
+                                        <li><span>Bolts, Nuts & Washers</span></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -369,60 +275,48 @@
                                 <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#d13a21"></path>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z" fill="#d13a21"></path>
                             </svg>
-                            About Us
+                            Bolts, Nuts & Washers Products
                         </span>
                     </h2>
                 </div>
-
                 <div class="p-st-overview">
-                    <div class="p-st-ov-txt descrip">We solve worldwide industrial every problem, the heart of global landscape</div>
+                    <div class="p-st-ov-txt descrip">High-quality fasteners for secure assemblies</div>
                     <div class="p-st-ov-btn ">
-                        <a class="rs-btn has-theme-red has-icon has-bg" href="about.html">Explore More
+                        <a class="rs-btn has-theme-red has-icon has-bg" href="contact.html">Contact Us
                             <span class="icon-box">
                                 <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                    <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                    </path>
+                                    <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
                                 </svg>
                                 <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                    <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                    </path>
+                                    <path d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z"></path>
                                 </svg>
                             </span>
                         </a>
                     </div>
                 </div>
 
-                <div class="p-st-main">
-                    <div class="p-st-main-col">
-                        <div class="p-st-main-col-imgb">
-                            <img class="p-st-main-col-img" src="assets/my-images/products/bolts-nuts/anchor2.png" alt="">
-                        </div>
-                        <div class="p-st-main-col-txt descrip">
-                            This a really good screw
-                        </div>
-                    </div>
+                <!-- Add buttons here inside the empty overview div -->
+                <div class="p-st-overview">
+                    <button class="scroll-btn left-btn">&#10094;</button>
+                    <button class="scroll-btn right-btn">&#10095;</button>
+                </div>
+
+                <div class="p-st-main"> 
+                    
                     <div class="p-st-main-col">
                         <div class="p-st-main-col-imgb">
                             <img class="p-st-main-col-img" src="assets/my-images/products/bolts-nuts/bolts2.png" alt="">
                         </div>
                         <div class="p-st-main-col-txt descrip">
-                            This a really good screw
+                            Hex Bolts
                         </div>
                     </div>
                     <div class="p-st-main-col">
                         <div class="p-st-main-col-imgb">
-                            <img class="p-st-main-col-img" src="assets/my-images/products/bolts-nuts/hexnuts2.png" alt="">
+                            <img class="p-st-main-col-img" src="assets/my-images/products/bolts-nuts/anchor2.png" alt="">
                         </div>
                         <div class="p-st-main-col-txt descrip">
-                            This a really good screw
-                        </div>
-                    </div>
-                    <div class="p-st-main-col">
-                        <div class="p-st-main-col-imgb">
-                            <img class="p-st-main-col-img" src="assets/my-images/products/bolts-nuts/mild2.png" alt="">
-                        </div>
-                        <div class="p-st-main-col-txt descrip">
-                            This a really good screw
+                            Anchor Bolts
                         </div>
                     </div>
                     <div class="p-st-main-col">
@@ -430,7 +324,15 @@
                             <img class="p-st-main-col-img" src="assets/my-images/products/bolts-nuts/spring2.png" alt="">
                         </div>
                         <div class="p-st-main-col-txt descrip">
-                            This a really good screw
+                           Spring Nut
+                        </div>
+                    </div>
+                    <div class="p-st-main-col">
+                        <div class="p-st-main-col-imgb">
+                            <img class="p-st-main-col-img" src="assets/my-images/products/bolts-nuts/hexnuts2.png" alt="">
+                        </div>
+                        <div class="p-st-main-col-txt descrip">
+                            Hex Nuts 
                         </div>
                     </div>
                     <div class="p-st-main-col">
@@ -438,13 +340,23 @@
                             <img class="p-st-main-col-img" src="assets/my-images/products/bolts-nuts/washers2.png" alt="">
                         </div>
                         <div class="p-st-main-col-txt descrip">
-                            This a really good screw
+                            Washers
                         </div>
                     </div>
+                    <div class="p-st-main-col">
+                        <div class="p-st-main-col-imgb">
+                            <img class="p-st-main-col-img" src="assets/my-images/products/bolts-nuts/mild2.png" alt="">
+                        </div>
+                        <div class="p-st-main-col-txt descrip">
+                            Mild Steel Threaded ROD
+                        </div>
+                    </div>
+                    
                     
                 </div>
             </div>
         </section>
+
 
         <!-- products section tos -->
         <section style="padding-top: 86px !important;padding-bottom: 55px !important;" class="section-space container">
@@ -528,6 +440,26 @@
             </div>
         </section>  
 
+        <!-- CTA Section -->
+        <section class="cta-section" style="padding: 80px 0; text-align: center; background-color: #f5f5f5;">
+            <div class="cta-content">
+                <h2 class="cta-title" style="font-size: 36px; margin-bottom: 20px;">
+                    Ready to Take Your Project to the Next Level?
+                </h2>
+                <p class="cta-description descrip" style="font-size: 18px; max-width: 700px; margin: 0 auto 30px;">
+                    Join thousands of satisfied clients who trust us for high-quality industrial solutions. 
+                    Explore our products and services to see how we can help you achieve your goals faster and more efficiently.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="rs-btn has-theme-red has-bg" style="margin-right: 15px; padding: 12px 30px; font-size: 18px;">
+                        Contact Us
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+
         <!-- products section tos -->
         <section style="padding-top: 86px !important;padding-bottom: 55px !important;" class="section-space container">
             <div class="p-blk-title">
@@ -575,9 +507,8 @@
             <div class="p-s-thrd-cont">
                 <div class="p-s-thrd-l">
                     <h2>Precision Hex Nuts & Washers</h2>
-                    <p class="descrip">Hex nuts and washers are essential for strong thread engagement and proper load distribution, providing a secure, reliable, and vibration-resistant fastening solution. They are designed to pair perfectly with bolts and threaded rods, ensuring components stay tightly in place under various conditions.</p>
-                    <p class="descrip">Manufactured to strict quality standards, these components resist corrosion, deformation, and wear over time. Their consistent dimensions and durable construction make them ideal for steel structures, machinery assembly, industrial installations, and all types of heavy-duty fastening tasks, delivering long-lasting performance in demanding environments.</p>
-                </div>
+                    <p class="descrip">Hex nuts and washers ensure strong, reliable fastening and proper load distribution. They pair perfectly with bolts and threaded rods for vibration-resistant connections.</p>
+                    <p class="descrip">Made to high standards, they resist corrosion and wear, making them ideal for machinery, steel structures, and heavy-duty industrial tasks.</p>                </div>
                 <div class="p-s-thrd-mid-r-wrapper"></div>
                     <div class="p-s-thrd-mid">
                         <img src="assets/my-images/products/bolts-nuts/washers2.png" alt="">
@@ -596,7 +527,7 @@
                     <span class="rs-section-subtitle has-theme-orange justify-content-start">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
                             <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#d13a21"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z" fill="#d13a21"></path>
+                            <path fill-rule="evenodd" clip-rule="e  venodd" d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z" fill="#d13a21"></path>
                         </svg>
                         About Us
                     </span>
@@ -607,12 +538,40 @@
                     <img src="assets/my-images/products/bolts-nuts/mild.png" alt="">
                 </div>
                 <div class="p-s-tos-r">
-                    <h2>Durable Mild Steel Threaded Rods</h2>
-                    <p class="descrip">Mild steel threaded rods provide continuous threading along their entire length, offering exceptional versatility for fastening, joining, and structural reinforcement. They are widely used in construction projects, electrical supports, suspended ceilings, and machinery installations, ensuring components are securely held together in a variety of settings.</p>
-                    <p class="descrip">Designed for strength, stability, and reliable load-bearing performance, these rods work seamlessly with compatible nuts, washers, and anchors. Their consistent threading, high workability, and durability make them suitable for both temporary and permanent industrial applications, providing a dependable solution for mechanical and structural needs.</p>
+                    <h2 style="margin-bottom: 10px;">Durable Mild Steel Threaded Rods</h2>
+                    <p class="descrip">Mild steel threaded rods offer continuous threading for versatile fastening and structural reinforcement, suitable for construction, electrical supports, and machinery installations.</p>
+                    <p class="descrip">Strong and durable, they work with nuts, washers, and anchors, providing a dependable solution for both temporary and permanent industrial applications.</p>
                 </div>
             </div>
         </section>
+
+        <!-- subscribe area start -->
+        <div class="rs-subscribe-area rs-subscribe-one">
+            <div class="container">
+                <div class="rs-subscribe-wrapper">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="rs-subscribe-content">
+                                <div class="rs-subscribe-text">
+                                    <p>
+                                        Be in touch with us for latest updates & offers
+                                    </p>
+                                </div>
+                                <div class="rs-subscribe-input">
+                                    <input name="name" type="text" placeholder="Enter Your Email">
+                                    <button type="submit" class="rs-btn blue-bg">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- subscribe area end -->
+
 
     </main>
     <!-- Body main wrapper end -->
