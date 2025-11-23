@@ -933,7 +933,10 @@ Sidebar Toggle
             });
     });
 
-})
+})  
+
+    // services section 
+    
     //nav btns ps-t
     (jQuery);
 

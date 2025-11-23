@@ -25702,6 +25702,147 @@ a.ui-button:active {
 /* maq-style start*/
 
 /* MAQ style */
+/* services section */
+/* Card Styling */
+.lock-card {
+  background: #fff;
+  border-radius: 18px;
+  background: #e9e9e9;
+  box-shadow: 15px 15px 30px #e4e4e4, -15px -15px 30px #ffffff;
+  padding: 40px 30px;
+  min-height: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.9s ease;
+  position: relative;
+  overflow: hidden;
+}
+.lock-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.lock-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+}
+.lock-card p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+.lock-btn {
+  display: inline-block;
+  background: #d13a21;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 35px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.lock-btn:hover {
+  background: #103055;
+}
+.lock-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(20, 59, 104, 0.35),
+  0 6px 10px rgba(20, 59, 104, 0.35);
+}
+
+/* Desktop Grid */
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  position: relative;
+}
+
+/* Scroll buttons (for mobile) */
+.scroll-btn {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  border-radius: 10%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+.scroll-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.scroll-btn.left {
+  left: -10px;
+}
+.scroll-btn.right {
+  right: -10px;
+}
+
+/* Scrollable layout for small screens */
+@media (max-width: 768px) {
+  .cards-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  }
+
+  .lock-card {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+  min-width: 280px;
+  }
+
+  .cards-wrapper::-webkit-scrollbar {
+  height: 8px;
+  }
+  .cards-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(0, 150, 255, 0.4);
+  border-radius: 10px;
+  }
+
+  .scroll-btn {
+  display: block;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] .lock-card-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .scroll-btn.left {
+  right: -10px;
+  left: auto;
+}
+
+[dir="rtl"] .scroll-btn.right {
+  left: -10px;
+  right: auto;
+}
+
+[dir="rtl"] .cards-wrapper {
+  direction: rtl; /* flips horizontal scroll for RTL */
+}
+
+
+/* ====================================================================================
+======================================================================================== */
+
 /* product section top */
 .p-st-cont{
     display: flex;
@@ -25863,6 +26004,8 @@ a.ui-button:active {
     }
 }
 
+/* ====================================================================================
+======================================================================================== */
 
 /* product section BLK */
 .p-blk-cont{
@@ -26008,6 +26151,9 @@ a.ui-button:active {
   }
 }
 
+/* ====================================================================================
+======================================================================================== */
+
 /* product section third */
 /* Desktop layout - original */
 .p-s-thrd-cont{
@@ -26091,6 +26237,10 @@ a.ui-button:active {
     
   }
 }
+
+/* ====================================================================================
+======================================================================================== */
+
 /* products section tos */
 .p-s-tos-cont{
   display: flex;
