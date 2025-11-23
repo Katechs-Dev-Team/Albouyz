@@ -25853,30 +25853,149 @@ a.ui-button:active {
     margin-bottom: 60px;
 }
 
-.p-st-main-wrapper {
+/* BUTTON WRAPPER */
+.p-st-ov-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
     position: relative;
+    z-index: 50;
+}
+/* Button container */
+.p-st-overview {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.scroll-btn {
-    background-color: #d13a21; /* match theme */
+/* NEW button class */
+.prod-scroll-btn {
+    background-color: #d13a21;
     color: #fff;
-    width: 56px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-    padding: 10px 15px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 24px;
-    border-radius: 5px;
-    transition: background 0.3s;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    z-index: 10;
 }
 
-.scroll-btn:hover {
+.prod-scroll-btn:hover {
     background-color: #a52a18;
 }
+
+/* Scrollable main row */
+.p-st-main {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+/* Hide buttons on mobile */
 @media (max-width: 768px) {
-    .p-st-overview .scroll-btn {
+    .prod-scroll-btn {
         display: none;
     }
 }
+
+/* ACTUAL BUTTON */
+.p-st-btn {
+    background: #d13a21;        /* main theme red */
+    color: #fff;
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.p-st-btn:hover {
+    background: #aa2e19;
+}
+
+/* ICON INSIDE BUTTON */
+.p-st-btn .icon-box {
+    display: flex;
+    align-items: center;
+}
+
+.p-st-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+}
+
+/* HIDE ON SMALL SCREENS */
+@media (max-width: 768px) {
+    .p-st-ov-btn {
+        display: none !important;
+    }
+}
+
+  /* Wrapper fix */
+.p-st-overview {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Scroll buttons */
+.scroll-btn {
+    background-color: #d13a21;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    z-index: 10; /* ensures button is visible above elements */
+}
+
+/* Hover */
+.scroll-btn:hover {
+    background-color: #a52a18;
+}
+
+/* Fix: ensure the main slider is scrollable horizontally */
+.p-st-main {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+/* Hide scroll buttons on mobile */
+@media (max-width: 768px) {
+    .scroll-btn {
+        display: none;
+    }
+}
+
+
 /* Title */
 .p-st-title{
     width: 100%;

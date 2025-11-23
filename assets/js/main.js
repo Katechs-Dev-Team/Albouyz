@@ -939,27 +939,29 @@ Sidebar Toggle
     
     //nav btns ps-t
     (jQuery);
+const container = document.querySelector('.p-st-main');
+const leftBtn = document.querySelector('.prod-left-btn');
+const rightBtn = document.querySelector('.prod-right-btn');
 
-    const mainContainer = document.querySelector('.p-st-main');
-    const leftBtn = document.querySelector('.left-btn');
-    const rightBtn = document.querySelector('.right-btn');
+function scrollSmooth(container, distance, duration) {
+    const start = container.scrollLeft;
+    const startTime = performance.now();
 
-    leftBtn.addEventListener('click', () => {
-        mainContainer.scrollBy({ left: -300, behavior: 'smooth' });
-    });
-
-    rightBtn.addEventListener('click', () => {
-        mainContainer.scrollBy({ left: 300, behavior: 'smooth' });
-    });
-    // profile btn js
-    function openPdfModal(url) {
-        document.getElementById("pdfFrame").src = url;
-        document.getElementById("pdfModal").style.display = "flex";
+    function scrollStep(timestamp) {
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        container.scrollLeft = start + distance * progress;
+        if (progress < 1) requestAnimationFrame(scrollStep);
     }
 
-    function closePdfModal() {
-        document.getElementById("pdfModal").style.display = "none";
-        document.getElementById("pdfFrame").src = "";
-    }
+    requestAnimationFrame(scrollStep);
+}
+
+leftBtn.addEventListener('click', () => scrollSmooth(container, -300, 400));
+rightBtn.addEventListener('click', () => scrollSmooth(container, 300, 400));
+
+
+
+    
 
 
