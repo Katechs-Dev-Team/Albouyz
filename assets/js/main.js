@@ -935,3 +935,16 @@ Sidebar Toggle
 
 })(jQuery);
 
+    const mainContainer = document.querySelector('.p-st-main');
+    const leftBtn = document.querySelector('.left-btn');
+    const rightBtn = document.querySelector('.right-btn');
+
+    leftBtn.addEventListener('click', () => {
+        mainContainer.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+        mainContainer.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+
+
