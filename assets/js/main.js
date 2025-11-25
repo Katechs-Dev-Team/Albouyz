@@ -961,7 +961,15 @@ leftBtn.addEventListener('click', () => scrollSmooth(container, -300, 400));
 rightBtn.addEventListener('click', () => scrollSmooth(container, 300, 400));
 
 
+function openPdfModal(url) {
+    document.getElementById('pdfFrame').src = url;
+    document.getElementById('pdfModal').style.display = 'flex';
+}
 
+function closePdfModal() {
+    document.getElementById('pdfModal').style.display = 'none';
+    document.getElementById('pdfFrame').src = '';
+}
     
 
 
