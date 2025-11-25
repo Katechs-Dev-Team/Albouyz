@@ -26472,6 +26472,11 @@ a.ui-button:active {
 .my-rtl-sections.rtl-enabled svg {
     transform: scaleX(-1);
 }
+/* font */
+/* Apply Cairo font to all text elements */
+body, body *:not(i):not(svg):not([class*="icon"]):not([class*="fa"]) {
+    font-family: 'Cairo', sans-serif !important;
+}
 
 
 

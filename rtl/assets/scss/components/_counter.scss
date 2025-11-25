@@ -27,7 +27,7 @@
             stroke-width: 2px;
             -webkit-text-stroke-color: rgba(31, 31, 31, 0.6);
             stroke: rgba(31, 31, 31, 0.6);
-            font-weight: 700;
+            font-weight: 500;
             line-height: .8;
             @media #{$laptop}{
                 font-size: 100px;
@@ -47,7 +47,7 @@
             border-bottom: 1px solid rgba(31, 31, 31, 0.16);
         }
         .rs-counter-title {
-            font-size: 28px;
+            font-size: 20px;
         }
         &.has-theme-red {
             background: #111111;

@@ -210,12 +210,3 @@
 
     }
 }
-
-body:not(.rtl) .rs-theme-dir-slide {
-    inset-inline-end: 4px;
-    inset-inline-start: unset;
-}
-body.rtl .rs-theme-dir-slide {
-    inset-inline-end: unset;
-    inset-inline-start: 4px;
-}
