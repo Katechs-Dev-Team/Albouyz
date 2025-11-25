@@ -841,3 +841,88 @@ Sidebar Toggle
 
 })(jQuery);
 
+    //nav btns ps-t
+    (jQuery);
+const container = document.querySelector('.p-st-main');
+const leftBtn = document.querySelector('.prod-left-btn');
+const rightBtn = document.querySelector('.prod-right-btn');
+
+function scrollSmooth(container, distance, duration) {
+    const start = container.scrollLeft;
+    const startTime = performance.now();
+
+    function scrollStep(timestamp) {
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        container.scrollLeft = start + distance * progress;
+        if (progress < 1) requestAnimationFrame(scrollStep);
+    }
+
+    requestAnimationFrame(scrollStep);
+}
+
+rightBtn.addEventListener('click', () => scrollSmooth(container, -300, 400));
+leftBtn.addEventListener('click', () => scrollSmooth(container, 300, 400));
+
+
+function openPdfModal(url) {
+    document.getElementById('pdfFrame').src = url;
+    document.getElementById('pdfModal').style.display = 'flex';
+}
+
+function closePdfModal() {
+    document.getElementById('pdfModal').style.display = 'none';
+    document.getElementById('pdfFrame').src = '';
+}
+    
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mainBtn = document.querySelector('.lang-main-btn');
+  const langFloat = document.querySelector('.lang-float');
+  const langButtons = document.querySelectorAll('.lang-btn');
+
+  mainBtn.addEventListener('click', () => {
+    langFloat.classList.toggle('active');
+  });
+
+  langButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      const currentPath = window.location.pathname; // e.g. /about.html
+      const fileName = currentPath.substring(currentPath.lastIndexOf('/') + 1); // get about.html
+
+      if (lang === 'ar') {
+        // Redirect to the same page but inside rtl folder
+        window.location.href = `/rtl/${fileName}`;
+      } else if (lang === 'en') {
+        // Redirect to English version in root folder
+        window.location.href = `/${fileName}`;
+      }
+    });
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+        const mainBtn = document.querySelector('.lang-main-btn');
+        const langFloat = document.querySelector('.lang-float');
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        mainBtn.addEventListener('click', () => {
+            langFloat.classList.toggle('active');
+        });
+
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang');
+            const currentPath = window.location.pathname; // e.g. /about.html
+            const fileName = currentPath.substring(currentPath.lastIndexOf('/') + 1); // get about.html
+
+            if (lang === 'ar') {
+                // Redirect to the same page but inside rtl folder
+                window.location.href = `/rtl/${fileName}`;
+            } else if (lang === 'en') {
+                // Redirect to English version in root folder
+                
+            }
+            });
+        });
+        });

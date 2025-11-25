@@ -997,4 +997,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+document.addEventListener('DOMContentLoaded', () => {
+        const mainBtn = document.querySelector('.lang-main-btn');
+        const langFloat = document.querySelector('.lang-float');
+        const langButtons = document.querySelectorAll('.lang-btn');
 
+        mainBtn.addEventListener('click', () => {
+            langFloat.classList.toggle('active');
+        });
+
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang');
+            const currentPath = window.location.pathname; // e.g. /about.html
+            const fileName = currentPath.substring(currentPath.lastIndexOf('/') + 1); // get about.html
+
+            if (lang === 'ar') {
+                // Redirect to the same page but inside rtl folder
+                window.location.href = `/rtl/${fileName}`;
+            } else if (lang === 'en') {
+                // Redirect to English version in root folder
+                
+            }
+            });
+        });
+        });

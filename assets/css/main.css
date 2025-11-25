@@ -25851,7 +25851,29 @@ a.ui-button:active {
     width: 100%;
     gap: 25px;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 3;
 }
+.p-st-main {
+    display: flex;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    gap: 25px; /* optional spacing */
+}
+
+.p-st-main-col {
+    min-width: 200px; /* IMPORTANT: force horizontal scrolling */
+    flex: 0 0 auto;
+}
+.prod-scroll-btn {
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto !important;
+    cursor: pointer;
+}
+
 
 /* BUTTON WRAPPER */
 .p-st-ov-btn {
@@ -25888,6 +25910,7 @@ a.ui-button:active {
     transition: 0.3s ease-in-out;
     z-index: 10;
 }
+
 
 .prod-scroll-btn:hover {
     background-color: #a52a18;
