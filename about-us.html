@@ -62,7 +62,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about-us.html">About us</a></li>
                                     <li class="menu-item-has-children">
-                                        <a href="#">Our Products</a>
+                                        <a href="javascript:void(0)">Our Products</a> <!-- Not clickable -->
                                         <ul class="submenu last-children">
                                             <li>
                                                 <a href="Bolts-Nuts-Washers.html">Bolts, Nuts and Washers</a>
@@ -85,7 +85,7 @@
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="#">Manufacturing</a>
+                                        <a href="avascript:void(0)">Manufacturing</a>
                                         <ul class="submenu last-children">
                                             <li>
                                                 <a href="#">Steel Manufacturing</a>
@@ -615,24 +615,7 @@
                                     </div>
                                 </div>
 
-                                <div class="rs-about-btn">
-                                    <a class="rs-btn has-theme-red has-icon has-bg" href="about.html">Discover Us
-                                        <span class="icon-box">
-                                 <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                    <path
-                                       d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                    </path>
-                                 </svg>
-                                 <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                    <path
-                                       d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                    </path>
-                                 </svg>
-                              </span>
-                                    </a>
-
-
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -737,7 +720,7 @@
             </div>
         </div>
         <!-- subscribe area end -->
-         
+
         <!-- lang btn  -->
         <div class="lang-float">
         <button style="font-weight: 700;" class="lang-main-btn">
@@ -773,7 +756,7 @@
                 window.location.href = `/rtl/${fileName}`;
             } else if (lang === 'en') {
                 // Redirect to English version in root folder
-                window.location.href = `/${fileName}`;
+                
             }
             });
         });

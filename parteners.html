@@ -60,7 +60,29 @@
                             <nav id="mobile-menu" class="main-menu">
                                 <ul class="multipage-menu">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="javascript:void(0)">Our Products</a> <!-- Not clickable -->
+                                        <ul class="submenu last-children">
+                                            <li>
+                                                <a href="Bolts-Nuts-Washers.html">Bolts, Nuts and Washers</a>
+                                            </li>
+                                            <li>
+                                                <a href="Screws.html">Screws</a>
+                                            </li>
+                                            <li>
+                                                <a href="Fixings-Anchors.html">Fixings and Anchors</a>
+                                            </li>
+                                            <li>
+                                                <a href="Metal-Framing-System.html">Metal Framing System</a>
+                                            </li>
+                                            <li>
+                                                <a href="Wire-Mesh.html">Wire and Mesh</a>
+                                            </li>
+                                            <li>
+                                                <a href="Measuring-Tools.html">Measuring Tools</a>
+                                            </li>
+                                        </ul>
+                                    </li>
                                     <li class="menu-item-has-children">
                                         <a href="#">Our Products</a>
                                         <ul class="submenu last-children">
@@ -85,7 +107,7 @@
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="#">Manufacturing</a>
+                                        <a href="avascript:void(0)">Manufacturing</a>
                                         <ul class="submenu last-children">
                                             <li>
                                                 <a href="#">Steel Manufacturing</a>
@@ -376,6 +398,49 @@
             </div>
         </div>
         <!-- subscribe area end -->
+
+                <!-- lang btn  -->
+        <div class="lang-float">
+        <button style="font-weight: 700;" class="lang-main-btn">
+            <span class="globe-icon"><img src="assets/my-images/lang.png" alt=""></span> Language
+        </button>
+        <div class="lang-list">
+            <button class="lang-btn" data-lang="en">
+            <img src="https://cdn-icons-png.flaticon.com/512/197/197484.png" alt="English" width="24">
+            <span class="lang-text">English</span>
+            </button>
+            <button class="lang-btn" data-lang="ar">
+            <img src="assets/my-images/saudi-arabia.png" alt="Arabic" width="24">
+            <span class="lang-text">العربية</span>
+            </button>
+        </div>
+        <script>document.addEventListener('DOMContentLoaded', () => {
+        const mainBtn = document.querySelector('.lang-main-btn');
+        const langFloat = document.querySelector('.lang-float');
+        const langButtons = document.querySelectorAll('.lang-btn');
+
+        mainBtn.addEventListener('click', () => {
+            langFloat.classList.toggle('active');
+        });
+
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang');
+            const currentPath = window.location.pathname; // e.g. /about.html
+            const fileName = currentPath.substring(currentPath.lastIndexOf('/') + 1); // get about.html
+
+            if (lang === 'ar') {
+                // Redirect to the same page but inside rtl folder
+                window.location.href = `/rtl/${fileName}`;
+            } else if (lang === 'en') {
+                // Redirect to English version in root folder
+                
+            }
+            });
+        });
+        });
+        </script>
+        </div>
 
 
 </main>

@@ -12119,7 +12119,7 @@ body.rtl .rs-theme-dir-slide {
 }
 .rs-about-six .rs-about-wrapper {
   display: grid;
-  grid-template-columns: 410px 880px;
+  grid-template-columns: 410px 720px;
   justify-content: center;
   align-items: start;
   gap: 30px;
@@ -26496,10 +26496,7 @@ a.ui-button:active {
   padding: 10px 18px;
   border-radius: 20px;
   background: #ecf0f3;
-  box-shadow: -8px -4px 8px #ffffff,
-              8px 4px 12px #d1d9e6,
-              4px 4px 4px #d1d9e6 inset,
-              -4px -4px 4px #ffffff inset;
+  
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -26537,8 +26534,7 @@ a.ui-button:active {
     padding: 10px 18px;
     border-radius: 20px;
     background: whitesmoke;
-    /* box-shadow: -8px -4px 8px #ffffff, 8px 4px 12px #d1d9e6, 4px 4px 4px #d1d9e6 inset, -4px -4px 4px #ffffff inset; */
-    border: solid;
+    border: solid 2px;
     cursor: pointer;
     font-size: 16px;
     color: #000000;
