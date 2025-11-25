@@ -359,153 +359,164 @@ function closePdfModal() {
         </section>
         <!-- breadcrumb area end -->
 
-    <!-- Certificates Section -->
-    <section class="rs-elements-brand-area rs-brand-one primary-bg section-space rs-swiper"
-        style="background:#f9fafc; padding:80px 6%;">
-    <div class="container">
-        <!-- Title -->
-        <div class="row g-5 justify-content-center section-title-space align-items-center">
-        <div class="col-xxl-8 col-xl-9 col-lg-9 col-md-9 col-sm-9">
-            
+        <!-- Certificates Section -->
+        <section class="rs-elements-brand-area rs-brand-one primary-bg section-space rs-swiper"
+            style="background:#f9fafc; padding:80px 6%;">
+        <div class="container">
+            <!-- Title -->
+            <div class="row g-5 justify-content-center section-title-space align-items-center">
+            <div class="col-xxl-8 col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                <div class="rs-section-title-wrapper text-center">
+                <span class="rs-section-subtitle has-theme-red">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
+                    <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
+                        fill="#EA5501"></path>
+                    </svg>
+                    Certificates
+                </span>
+                <h2 class="rs-section-title rs-split-text-enable split-in-fade">Official Accreditations</h2>
+                </div>
+            </div>
+            </div>
+
+            <!-- Certificates Wrapper -->
+            <div class="certificates-wrapper">
+            <button style="display: none !important;" class="scroll-btn left" id="scrollLeftBtn">&#10094;</button>
+
+            <div class="certificates-container" id="certificatesContainer">
+                <div class="cert-card"><img src="assets/my-images/homepage/cert/1.png" alt="Certificate 1"></div>
+                <div class="cert-card"><img src="assets/my-images/homepage/cert/2.png" alt="Certificate 2"></div>
+                <div class="cert-card"><img src="assets/my-images/homepage/cert/3.png" alt="Certificate 3"></div>
+                <div class="cert-card"><img src="assets/my-images/homepage/cert/4.png" alt="Certificate 4"></div>
+            </div>
+
+            <button style="display: none !important;" class="scroll-btn right" id="scrollRightBtn">&#10095;</button>
+            </div>
         </div>
-        </div>
 
-        <!-- Certificates Wrapper -->
-        <div class="certificates-wrapper">
-        <button style="display: none !important;" class="scroll-btn left" id="scrollLeftBtn">&#10094;</button>
+        <style>
+            .certificates-wrapper {
+            position: relative;
+            overflow: hidden;
+            margin-top: 40px;
+            margin-bottom: 80px;
+            padding-bottom: 20px;
+            }
 
-        <div class="certificates-container" id="certificatesContainer">
-            <div class="cert-card"><img src="assets/my-images/homepage/cert/1.png" alt="Certificate 1"></div>
-            <div class="cert-card"><img src="assets/my-images/homepage/cert/2.png" alt="Certificate 2"></div>
-            <div class="cert-card"><img src="assets/my-images/homepage/cert/3.png" alt="Certificate 3"></div>
-            <div class="cert-card"><img src="assets/my-images/homepage/cert/4.png" alt="Certificate 4"></div>
-        </div>
+            .certificates-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            justify-items: center;
+            transition: all 0.3s ease;
+            }
 
-        <button style="display: none !important;" class="scroll-btn right" id="scrollRightBtn">&#10095;</button>
-        </div>
-    </div>
-
-    <style>
-        .certificates-wrapper {
-        position: relative;
-        overflow: hidden;
-        margin-top: 40px;
-        margin-bottom: 80px;
-        padding-bottom: 20px;
-        }
-
-        .certificates-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        justify-items: center;
-        transition: all 0.3s ease;
-        }
-
-        .cert-card img {
-        width: 200px;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-        }
-
-        .cert-card img:hover {
-        transform: scale(1.04);
-        }
-
-        /* Navigation buttons */
-        .scroll-btn {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-        background-color: #d13a21;
-        color: #fff;
-        border: none;
-        border-radius: 50%;
-        padding: 10px 14px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        font-size: 22px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 5;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        }
-
-        .scroll-btn:hover {
-        background-color: #b02e1b;
-        transform: translateY(-50%) scale(1.05);
-        }
-
-        .scroll-btn.left {
-        left: 10px;
-        }
-
-        .scroll-btn.right {
-        right: 10px;
-        }
-
-        /* 📱 Mobile Responsive Scroll */
-        @media (max-width: 768px) {
-        .certificates-container {
-            display: flex;
-            overflow-x: auto;
-            gap: 20px;
-            scroll-behavior: smooth;
-            scroll-snap-type: x mandatory;
-            padding: 10px 0;
-        }
-
-        .cert-card {
-            flex: 0 0 45%;
-            scroll-snap-align: start;
-        }
-
-        .cert-card img {
-            width: 100%;
-            max-width: 200px;
-        }
-
-        /* ✅ Show navigation only on mobile */
-        .scroll-btn {
-            visibility: visible !important;
-            opacity: 1 !important;
-            pointer-events: auto !important;
-            display: flex !important;
-        }
-
-        .certificates-container::-webkit-scrollbar {
-            height: 8px;
-        }
-
-        .certificates-container::-webkit-scrollbar-thumb {
-            background: rgba(209, 58, 33, 0.5);
+            .cert-card img {
+            width: 200px;
             border-radius: 10px;
-        }
-        }
-    </style>
+            transition: transform 0.3s ease;
+            }
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-        const container = document.getElementById("certificatesContainer");
-        const btnLeft = document.getElementById("scrollLeftBtn");
-        const btnRight = document.getElementById("scrollRightBtn");
+            .cert-card img:hover {
+            transform: scale(1.04);
+            }
 
-        btnLeft.addEventListener("click", () => {
-            container.scrollBy({ left: -250, behavior: "smooth" });
-        });
+            /* Navigation buttons */
+            .scroll-btn {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            background-color: #d13a21;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            }
 
-        btnRight.addEventListener("click", () => {
-            container.scrollBy({ left: 250, behavior: "smooth" });
-        });
-        });
-    </script>
-    </section>
-    <!-- End Certificates Section -->
+            .scroll-btn:hover {
+            background-color: #b02e1b;
+            transform: translateY(-50%) scale(1.05);
+            }
 
-<!-- subscribe area start -->
+            .scroll-btn.left {
+            left: 10px;
+            }
+
+            .scroll-btn.right {
+            right: 10px;
+            }
+
+            /* 📱 Mobile Responsive Scroll */
+            @media (max-width: 768px) {
+            .certificates-container {
+                display: flex;
+                overflow-x: auto;
+                gap: 20px;
+                scroll-behavior: smooth;
+                scroll-snap-type: x mandatory;
+                padding: 10px 0;
+            }
+
+            .cert-card {
+                flex: 0 0 45%;
+                scroll-snap-align: start;
+            }
+
+            .cert-card img {
+                width: 100%;
+                max-width: 200px;
+            }
+
+            /* ✅ Show navigation only on mobile */
+            .scroll-btn {
+                visibility: visible !important;
+                opacity: 1 !important;
+                pointer-events: auto !important;
+                display: flex !important;
+            }
+
+            .certificates-container::-webkit-scrollbar {
+                height: 8px;
+            }
+
+            .certificates-container::-webkit-scrollbar-thumb {
+                background: rgba(209, 58, 33, 0.5);
+                border-radius: 10px;
+            }
+            }
+        </style>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById("certificatesContainer");
+            const btnLeft = document.getElementById("scrollLeftBtn");
+            const btnRight = document.getElementById("scrollRightBtn");
+
+            btnLeft.addEventListener("click", () => {
+                container.scrollBy({ left: -250, behavior: "smooth" });
+            });
+
+            btnRight.addEventListener("click", () => {
+                container.scrollBy({ left: 250, behavior: "smooth" });
+            });
+            });
+        </script>
+        </section>
+        <!-- End Certificates Section -->
+
+        <!-- subscribe area start -->
         <div class="rs-subscribe-area rs-subscribe-one">
             <div class="container">
                 <div class="rs-subscribe-wrapper">
