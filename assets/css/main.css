@@ -26476,3 +26476,80 @@ a.ui-button:active {
 
 
 
+.lang-float {
+  position: fixed;
+  left: 20px;
+  bottom: 20px; /* main button at bottom */
+  display: flex;
+  flex-direction: column-reverse; /* flags will appear above the button */
+  align-items: flex-start;
+  gap: 10px;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+
+/* Main language button */
+.lang-main-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  background: #ecf0f3;
+  box-shadow: -8px -4px 8px #ffffff,
+              8px 4px 12px #d1d9e6,
+              4px 4px 4px #d1d9e6 inset,
+              -4px -4px 4px #ffffff inset;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #394a56;
+  transition: all 0.3s ease;
+}
+
+.lang-main-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Flags container */
+.lang-list {
+  display: flex;
+  flex-direction: column-reverse; /* flags grow upward */
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+/* Show flags when active */
+.lang-float.active .lang-list {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Individual language buttons */
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    background: whitesmoke;
+    /* box-shadow: -8px -4px 8px #ffffff, 8px 4px 12px #d1d9e6, 4px 4px 4px #d1d9e6 inset, -4px -4px 4px #ffffff inset; */
+    border: solid;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+
+.lang-btn:hover {
+  transform: scale(1.05);
+}
+
+.lang-text {
+  font-weight: bold;
+}
