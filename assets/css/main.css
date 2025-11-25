@@ -26313,10 +26313,6 @@ a.ui-button:active {
   gap: 15px;
   width: 25%;
   padding-bottom: 90px;
-  transition: transform 0.7s ease; /* Smooth animation */ 
-}
-.p-s-thrd-r:hover{
-  transform: scale(1.04); /* Slightly bigger on hover */
 }
 
 .p-s-thrd-r img{
@@ -26324,6 +26320,10 @@ a.ui-button:active {
   height: 100%;
   object-fit: cover;
   border-radius: 5%;
+  transition: transform 0.7s ease; /* Smooth animation */ 
+}
+.p-s-thrd-r img:hover{
+  transform: scale(1.04); /* Slightly bigger on hover */
 }
 
 /* Responsive layout for small screens (≤768px) */
