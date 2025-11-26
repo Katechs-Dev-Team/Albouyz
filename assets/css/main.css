@@ -5197,7 +5197,8 @@ html.lenis body {
   right: 100%;
 }
 .rs-theme-settings-open button {
-  background-color: var(--rs-white);
+  display: none ;
+  /* background-color: var(--rs-white);
   border-inline-end: 0;
   width: 45px;
   height: 45px;
@@ -5210,7 +5211,7 @@ html.lenis body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.15); */
 }
 .rs-theme-settings-gear {
   display: inline-block;
