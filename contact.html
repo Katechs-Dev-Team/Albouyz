@@ -391,46 +391,14 @@
         <!-- Google map area end-->
 
         <!-- lang btn  -->
-        <div class="lang-float">
-        <button style="font-weight: 700;" class="lang-main-btn">
-            <span class="globe-icon"><img src="assets/my-images/lang.png" alt=""></span> Language
-        </button>
-        <div class="lang-list">
-            <button class="lang-btn" data-lang="en">
-            <img src="https://cdn-icons-png.flaticon.com/512/197/197484.png" alt="English" width="24">
-            <span class="lang-text">English</span>
-            </button>
-            <button class="lang-btn" data-lang="ar">
-            <img src="assets/my-images/saudi-arabia.png" alt="Arabic" width="24">
-            <span class="lang-text">العربية</span>
-            </button>
-        </div>
-        <script>document.addEventListener('DOMContentLoaded', () => {
-        const mainBtn = document.querySelector('.lang-main-btn');
-        const langFloat = document.querySelector('.lang-float');
-        const langButtons = document.querySelectorAll('.lang-btn');
-
-        mainBtn.addEventListener('click', () => {
-            langFloat.classList.toggle('active');
-        });
-
-        langButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-            const lang = btn.getAttribute('data-lang');
-            const currentPath = window.location.pathname; // e.g. /about.html
-            const fileName = currentPath.substring(currentPath.lastIndexOf('/') + 1); // get about.html
-
-            if (lang === 'ar') {
-                // Redirect to the same page but inside rtl folder
-                window.location.href = `/rtl/${fileName}`;
-            } else if (lang === 'en') {
-                // Redirect to English version in root folder
-                
-            }
-            });
-        });
-        });
-        </script>
+        <div class="lang-float" id="langBtn">
+            <img src="assets/my-images/saudi-arabia.png" alt="Saudi Flag">
+            <script>
+                document.getElementById("langBtn").addEventListener("click", function () {
+                    const currentPage = window.location.pathname.split("/").pop(); // page.html
+                    window.location.href = "/rtl/" + currentPage; 
+                });
+            </script>
         </div>
 
     </main>
