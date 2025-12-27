@@ -4725,7 +4725,7 @@ code {
   align-items: center;
   justify-content: center;
   height: 200px;
-  width: 100%;
+  width: 45%;
   box-shadow: 7px 7px 40px -3px rgba(16.98, 11.979, 45.91, 0.05);
 }
 .rs-brand-one .rs-brand-item.has-clip-path {
